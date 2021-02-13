@@ -333,7 +333,7 @@ kbd {
 
 <h4 id="toc_0"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
-<h2 id="toc_1">Parameters in DPD (Dissipative Particle Dynamics) model and the units conversation</h2>
+<h2 id="toc_1">Parameters in DPD (Dissipative Particle Dynamics) model and the units conversion</h2>
 
 <p><em>by Yawei Liu  @Sydney, Australia 2020/01/16</em></p>
 
@@ -359,7 +359,7 @@ between bead \(i\) and \(j\).</p>
 <li>\(r_c\): the cutoff distance, and also can be treated as the size (diameter) of the DPD bead.</li>
 </ul>
 
-<h3 id="toc_3">Determine paramters</h3>
+<h3 id="toc_3">Determining paramters</h3>
 
 <ul>
 <li>\(r_c\), \(k_BT\), \(m\) (bead mass) and \(\tau\) (time)
@@ -376,9 +376,9 @@ However, above choice for \(\Delta t\) and \(\gamma\) yields very small Schmidt 
 <li><p><strong>There is no unique way to determine the parameters for DPD model.</strong> For a given physical problem, with a characteristic length scale, we may always put a given number of DPD particles and parametrize the model in order to recover some macroscopic information (e.g. compressibilities, viscosity and diffusion constant).</p></li>
 </ul>
 
-<h3 id="toc_4">Units conversation</h3>
+<h3 id="toc_4">Units  conversion</h3>
 
-<p>The conversation between DPD units (\(r_c\), \(k_BT\), \(m\) and \(\tau\)) and real units ([m], [J], [kg] and [s]) is obtained from the key macroscopic information recovered by the model. If quantities in DPD units are labeled with \(_{sim}\) and in real units are labeled with \(_{real}\), one would have</p>
+<p>The conversion between DPD units (\(r_c\), \(k_BT\), \(m\) and \(\tau\)) and real units ([m], [J], [kg] and [s]) is obtained from the key macroscopic information recovered by the model. If quantities in DPD units are labeled with \(_{sim}\) and in real units are labeled with \(_{real}\), one would have</p>
 
 <ul>
 <li>\(m=N_m M_{real}/N_A\) with \(M_{real}\) the mole mass of the fluid (e.g. water) and \(N_A\) the Avogadro constant.</li>
