@@ -1,6 +1,6 @@
+#### [HOME](../index.html)
 # Publications List
 --
-#### [HOME](../index.html)
 
 #### *Most of them can be downloaded from [Researchgate](https://www.researchgate.net/profile/Yawei_Liu3/research)*
 
@@ -73,6 +73,6 @@
 ##### 2. Nucleation mechanism for vapor-to-liquid transition from substrates with nanoscale pores opened at one end. Y Liu, Y Men, X Zhang – <span style="color:#00bfff">J. Chem. Phys.</span> 137, 104701 (2012) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/1.4749319)  
 
 ##### 1. How nanoscale seed particles affect vapor-liquid nucleation. Y Liu, Y Men, X Zhang – <span style="color:#00bfff">J. Chem. Phys.</span> 135, 184701 (2011) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/1.3658502)  
-
+--
 #### [HOME](../index.html)
 
