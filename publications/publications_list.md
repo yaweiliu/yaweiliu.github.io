@@ -68,7 +68,7 @@
 
 ##### 4. Nanobubble stability induced by contact line pinning. Y Liu, X Zhang – <span style="color:#00bfff">J. Chem. Phys.</span> 138, 014706 (2013) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/1.4773249)  
 
-##### 3. Cooperative effect in nucleation: Nanosized seed particles jointly nucleate vapor-liquid transitions. Q Guo, Y Liu, G Jiang, X. Zhang – <span style="color:#00bfff">Adv. Funct. Mater.</span>J. Chem. Phys. 138, 214701 (2013) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/1.4807726)  
+##### 3. Cooperative effect in nucleation: Nanosized seed particles jointly nucleate vapor-liquid transitions. Q Guo, Y Liu, G Jiang, X. Zhang – <span style="color:#00bfff">J. Chem. Phys.</span> 138, 214701 (2013) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/1.4807726)  
 
 ##### 2. Nucleation mechanism for vapor-to-liquid transition from substrates with nanoscale pores opened at one end. Y Liu, Y Men, X Zhang – <span style="color:#00bfff">J. Chem. Phys.</span> 137, 104701 (2012) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/1.4749319)  
 
