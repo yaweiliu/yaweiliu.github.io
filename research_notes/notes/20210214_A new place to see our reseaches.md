@@ -7,7 +7,7 @@ Today, I launched my personal academic blog and WeChat Subscription. From here, 
 
 * Overview of my current research interests.
 * Published work and presentations.
-* Notes on our researches, including summaries of literatures, discussions on technical problem, etc.
+* Notes on our researches, including summaries of literatures, discussions on technical problems, etc.
 * Home-made codes.
 * Experiences of using softwares/packages.
 * etc.
