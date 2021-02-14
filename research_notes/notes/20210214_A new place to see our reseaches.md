@@ -19,5 +19,12 @@ Hopefully, these contents are helpful in your researches. Welcome any suggestion
 <img src="images/gitee_yawei.png" alt="gitee page" width="80" height="80" />
 <img src="images/wechat.png" alt="wechat" width="80" height="80" />
 
+<footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+      <h6>view <span id="busuanzi_value_site_pv">       </span> times</h6>
+    </span>
+</footer>
+
 --
 #### [HOME](../../index.html) [CONTENTS](../index.html)
