@@ -21,8 +21,8 @@ Hopefully, these contents are helpful in your researches. Welcome any suggestion
 
 <footer>
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_pv" style='display:none'>
-      <h6>view <span id="busuanzi_value_site_uv">       </span> times</h6>
+    <span id="busuanzi_container_page_pv" style='display:none'>
+      <h6>view <span id="busuanzi_value_page_pv">       </span> times</h6>
     </span>
 </footer>
 
