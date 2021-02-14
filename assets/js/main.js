@@ -97,7 +97,8 @@
 
 	// Smooth scroll.
 		$('.smooth-scroll').scrolly();
-		$('.smooth-scroll-top').scrolly({ anchor: 'top' });
+		$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
+		$('.smooth-scroll-top').scrolly({ anchor: 'top' }); //yawei
 
 	// Wrapper.
 		$wrapper.children()
