@@ -6,27 +6,27 @@
 
 #### *See their citations in [Google Scholar](https://scholar.google.com.au/citations?user=Bh8mdUcAAAAJ&hl=en)*
 
-##### 34. A dissipative particle dynamics model for studying dynamic phenomena in colloidal rod suspensions. Y Liu, A Widmer-Cooper – <span style="color:#00bfff">J. Chem. Phys.</span> Accepted
+##### 34. A dissipative particle dynamics model for studying dynamic phenomena in colloidal rod suspensions. Y Liu, A Widmer-Cooper – <span style="color:#00bfff">J. Chem. Phys.</span> Accepted <span style="color:#ff931e">[Editor's picks]</span>
 
 ##### 33. Coarse-grained simulation of the translational and rotational diffusion of globular proteins by dissipative particle dynamics. J Wei, Y Liu, F song – <span style="color:#00bfff">J. Chem. Phys.</span> 153, 234902 (2020). [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/5.0025620) 
 
-##### 32. Direct Assembly of Vertically Oriented, Gold Nanorod Arrays. H Zhang, Y Liu, M F S Shahidan, C Kinnear, F Maasoumi, J Cadusch, E M Akinoglu, T D James, A Widmer-Cooper, A Roberts, P Mulvaney – <span style="color:#00bfff">Adv. Funct. Mater.</span> 2006753 (2020). [$\Rightarrow$](https://onlinelibrary.wiley.com/doi/10.1002/adfm.202006753)
+##### 32. Direct assembly of vertically oriented, gold nanorod arrays. H Zhang, Y Liu, M F S Shahidan, C Kinnear, F Maasoumi, J Cadusch, E M Akinoglu, T D James, A Widmer-Cooper, A Roberts, P Mulvaney – <span style="color:#00bfff">Adv. Funct. Mater.</span> 2006753 (2020). [$\Rightarrow$](https://onlinelibrary.wiley.com/doi/10.1002/adfm.202006753)
 
-##### 31. The Role of Fiber Agglomeration in Formation of Perylene-Based Fiber Networks. A Sharma, J P Wojciechowski, Y Liu, T Pelras, C M Wallace, M Müllner, A Widmer-Cooper, P Thordarson, G Lakhwani – <span style="color:#00bfff">Cell Rep. Phys. Sci.</span> 1, 100148 (2020) [$\Rightarrow$](https://linkinghub.elsevier.com/retrieve/pii/S2666386420301521)  
+##### 31. The role of fiber agglomeration in formation of perylene-based fiber networks. A Sharma, J P Wojciechowski, Y Liu, T Pelras, C M Wallace, M Müllner, A Widmer-Cooper, P Thordarson, G Lakhwani – <span style="color:#00bfff">Cell Rep. Phys. Sci.</span> 1, 100148 (2020) [$\Rightarrow$](https://linkinghub.elsevier.com/retrieve/pii/S2666386420301521)  
 
-##### 30. Stability of Pinned Surface Nanobubbles Against Expansion: Insights from Theory and Simulation. Y Liu, S Bernardi, A Widmer-Cooper – <span style="color:#00bfff">J. Chem. Phys.</span> 153, 024704 (2020) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/5.0013223)  
+##### 30. Stability of pinned surface nanobubbles against expansion: Insights from theory and simulation. Y Liu, S Bernardi, A Widmer-Cooper – <span style="color:#00bfff">J. Chem. Phys.</span> 153, 024704 (2020) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/5.0013223)  
 
-##### 29. Self-Assembly of Spherical and Rod-Shaped Nanoparticles with full Positional Control. J A Lloyd, Y Liu, S H Ng, T Thai, D E Gómez, A Widmer-Cooper, U. Bach – <span style="color:#00bfff">Nanoscale</span> 11, 22841 (2019) [$\Rightarrow$](http://xlink.rsc.org/?DOI=C9NR06679A)  
+##### 29. Self-assembly of spherical and rod-shaped nanoparticles with full positional control. J A Lloyd, Y Liu, S H Ng, T Thai, D E Gómez, A Widmer-Cooper, U. Bach – <span style="color:#00bfff">Nanoscale</span> 11, 22841 (2019) [$\Rightarrow$](http://xlink.rsc.org/?DOI=C9NR06679A)  
 
-##### 28. A Versatile Simulation Method for Studying Phase Behavior and Dynamics in Colloidal Rod and Rod-Polymer Suspensions. Y Liu, A Widmer-Cooper – <span style="color:#00bfff">J. Chem. Phys.</span> 150, 244508 (2019) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/1.5096193)  
+##### 28. A versatile simulation method for studying phase behavior and dynamics in colloidal rod and rod-polymer suspensions. Y Liu, A Widmer-Cooper – <span style="color:#00bfff">J. Chem. Phys.</span> 150, 244508 (2019) [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/1.5096193)  
 
 ##### 27. Pressure gradients fail to predict diffusio-osmosis. Y Liu, R Ganti, D Frenkel – <span style="color:#00bfff">J. Phys. Condens. Matter</span> 30, 205002 (2018) [$\Rightarrow$](http://iopscience.iop.org/article/10.1088/1361-648X/aabd58)  
 
-##### 26. Surface Nanobubbles Nucleate Liquid Boiling. J Zou, H Zhang, Z Guo, Y Liu, J Wei, Y Huang, X Zhang – <span style="color:#00bfff">Langmuir</span> 34, 14096–14101 (2018) [$\Rightarrow$](http://pubs.acs.org/doi/10.1021/acs.langmuir.8b03290)  
+##### 26. Surface nanobubbles nucleate liquid boiling. J Zou, H Zhang, Z Guo, Y Liu, J Wei, Y Huang, X Zhang – <span style="color:#00bfff">Langmuir</span> 34, 14096–14101 (2018) [$\Rightarrow$](http://pubs.acs.org/doi/10.1021/acs.langmuir.8b03290)  
 
-##### 25. Hamiltonian Transformation to Compute Thermo-osmotic Forces. R Ganti, Y Liu, D Frenkel – <span style="color:#00bfff">Phys. Rev. Lett.</span> 121, 068002 (2018) [$\Rightarrow$](https://link.aps.org/doi/10.1103/PhysRevLett.121.068002)  
+##### 25. Hamiltonian transformation to compute thermo-osmotic forces. R Ganti, Y Liu, D Frenkel – <span style="color:#00bfff">Phys. Rev. Lett.</span> 121, 068002 (2018) [$\Rightarrow$](https://link.aps.org/doi/10.1103/PhysRevLett.121.068002)  
 
-##### 24. Contact Line Pinning Effects Influence Determination of the Line Tension of Droplets Adsorbed on Substrates. H Zhang, S Chen, Z Guo, Y Liu, F Bresme, X Zhang – <span style="color:#00bfff">J. Phys. Chem. C</span> 122, 17184 (2018) [$\Rightarrow$](http://pubs.acs.org/doi/10.1021/acs.jpcc.8b03588)  
+##### 24. Contact line pinning effects influence determination of the line tension of droplets adsorbed on substrates. H Zhang, S Chen, Z Guo, Y Liu, F Bresme, X Zhang – <span style="color:#00bfff">J. Phys. Chem. C</span> 122, 17184 (2018) [$\Rightarrow$](http://pubs.acs.org/doi/10.1021/acs.jpcc.8b03588)  
 
 ##### 23. A review of recent theoretical and computational studies on pinned surface nanobubbles. Y Liu, X Zhang – <span style="color:#00bfff">Chin. Phys. B</span> 27, 14401 (2017) [$\Rightarrow$](https://iopscience.iop.org/article/10.1088/1674-1056/27/1/014401)  
 
