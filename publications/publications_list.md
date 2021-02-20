@@ -6,7 +6,7 @@
 
 #### *See their citations in [Google Scholar](https://scholar.google.com.au/citations?user=Bh8mdUcAAAAJ&hl=en)*
 
-##### 34. A dissipative particle dynamics model for studying dynamic phenomena in colloidal rod suspensions. Y Liu, A Widmer-Cooper – <span style="color:#00bfff">J. Chem. Phys.</span> Accepted <span style="color:#ff931e">[Editor's picks]</span>
+##### 34. A dissipative particle dynamics model for studying dynamic phenomena in colloidal rod suspensions. Y Liu, A Widmer-Cooper – <span style="color:#00bfff">J. Chem. Phys.</span> Accepted <span style="color:#ff931e">[Editor's pick]</span>
 
 ##### 33. Coarse-grained simulation of the translational and rotational diffusion of globular proteins by dissipative particle dynamics. J Wei, Y Liu, F song – <span style="color:#00bfff">J. Chem. Phys.</span> 153, 234902 (2020). [$\Rightarrow$](http://aip.scitation.org/doi/10.1063/5.0025620) 
 
