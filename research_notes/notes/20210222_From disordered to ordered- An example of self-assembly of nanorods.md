@@ -8,7 +8,7 @@ Nanorods are one of the simplest anisotropic nanoparticles, which are ideal buil
 
 One simple way to trigger the self-assembly of nanorods in the solutions and to form organized structures is adding some non-absorbing polymers which can modify the effective interactions between the colloids via depletion attractions. The range and strength of the attraction are determined by the diameter of the polymer coils and the polymer fugacity. Once the fugacity exceeds a threshold value, the self-assembly occurs and the new organized structures appears via a nucleation-growth pathway. (诱发溶液中纳米棒自组装并形成组织结构的一种简单方法是添加一些非吸附性聚合物，这些聚合物可以通过耗尽吸引力来改变胶体之间的有效相互作用。吸引力的范围和强度取决于聚合物团的的直径和聚合物逸度。一旦聚合物逸度超过阈值，自组装就会发生，新的组织结构会通过一个称为成核-生长的路径生成。)
 
-One project in our group is to understand the physics involved in these self-assembly processes. Understanding the underlying mechanism is necessary to cultivate efficient, facile, and economical methods for designing, fabricating and optimising these materials. (我们小组的一个项目是了解这些自组装过程中物理机制。了解这些底层机制对于通过有效、便捷和经济的制造手段实现功能材料的设计、制造和优
+One project in our group is to understand the physics involved in these self-assembly processes. Understanding the underlying mechanism is necessary to cultivate efficient, facile, and economical methods for designing, fabricating and optimising these materials. (我们小组的一个项目是了解这些自组装过程中物理机制。了解这些底层机制对于通过有效、便捷和经济的制造手段实现功能材料的设计、制造和优化具有重要的意义。)
 
 <!-- blank line -->
 <figure class="video_container">
