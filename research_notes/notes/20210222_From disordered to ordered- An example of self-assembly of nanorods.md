@@ -1,6 +1,6 @@
 #### [HOME](../../index.html) [CONTENTS](../index.html)
 
-## From disordered to ordered: An example of self-assembly of nanorods
+## From disorder to order: An example of self-assembly of nanorods
 
 *by Yawei Liu  @Sydney, Australia 2021/02/22*
 
