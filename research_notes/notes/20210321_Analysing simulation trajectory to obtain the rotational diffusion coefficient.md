@@ -4,13 +4,13 @@
  
 *by Yawei Liu  @ Sydney, Australia 2021/03/21*
 
-In our recent work on modelling the rod-shaped colloidal particles [1], we calculated the orientational diffusion coefficient from a rotational trajectory of the rod.
+In our recent work on modelling the rod-shaped colloidal particles [1], we calculated the orientational diffusion coefficient from the rotational trajectories of the rod.
 
 Analogous to the translational diffusion coefficient that can be evaluated from
 the mean-square displacement (MSD) of the colloidal particle, the rotational diffusion ($D_{r}$) is quantified through the *rotational* (or *angular*) mean-square displacement (RMSD, $\langle \Delta \vec{\varphi}^2(t) \rangle$) during time interval $t$ as follows:
 $$\langle \Delta \vec{\varphi}^2(t) \rangle= \langle | \vec{\varphi}(t_0+t)-\vec{\varphi}(t_0)|^2 \rangle = 4D_{r} t.$$
 
-To calculate $D_{r}$, we recorded the behaviour of the normalised vector $\hat{\textbf{u}}$ along the long axis for the rod from the simulations. The rod rotation will cause a rotation of $\hat{\textbf{u}}$. A example of the raw data is given below.
+To calculate $D_{r}$, we record the behaviour of the normalised vector $\hat{\textbf{u}}$ along the long axis for the rod from the simulations. The rod rotation will cause a rotation of $\hat{\textbf{u}}$. A example of the raw data is given below.
 
 ```
 time    ux           uy            uz
@@ -81,7 +81,7 @@ def _plot_RMSD(data):
     
     ax.text(120,0.5,r'$D_{r}=$ %.6f $\tau^{-1}$' %(popt[0]),va="center", ha="center")
     
-    y_fit = popt[0]*x+popt[1]
+    y_fit = _linear_function(x,*popt)
     ax.plot(x,y_fit,'k--');
     
     ax.set_xlabel(r'time [$\tau$]');
@@ -94,7 +94,7 @@ def _plot_RMSD(data):
 
 if __name__ == "__main__":  
     data = []
-    for i in range(1,100):
+    for i in range(1,50):
         raw_data_filename = 'result_trj%03d.log'%i
         RMSD = _compute_RMSD(raw_data_filename)
         data.append(RMSD)
