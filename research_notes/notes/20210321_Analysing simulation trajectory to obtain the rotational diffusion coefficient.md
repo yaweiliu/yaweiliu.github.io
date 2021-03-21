@@ -151,13 +151,6 @@ time 	RMSD
 <img src="images/gitee_yawei.png" alt="gitee page" width="80" height="80" />
 <img src="images/wechat.png" alt="wechat" width="80" height="80" />
 
-<footer>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_page_pv" style='display:none'>
-      <h6>view <span id="busuanzi_value_page_pv">       </span> times</h6>
-    </span>
-</footer>
-
 <p>&copy; 2021 Yawei Liu. All content licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution License (CC-BY 4.0)</a>.</p>
 
 --
