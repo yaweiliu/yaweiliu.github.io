@@ -102,7 +102,7 @@ if __name__ == "__main__":
     _plot_RMSD(RMSD)
 ```
 
-```_compute_RMSD``` reads a file of raw data and returns the corresponding RMSD Panda Dataframe as shown below:
+```_compute_RMSD``` reads a file of raw data and returns the corresponding RMSD Pandas Dataframe as shown below:
 
 ```
 time 	ux 	uy 	uz 	phix 	phiy 	phiz 	RMSD
@@ -119,7 +119,7 @@ time 	ux 	uy 	uz 	phix 	phiy 	phiz 	RMSD
 499 	-0.579522 	0.649882 	-0.491740 	1.137045 	-0.395013 	0.315529 	1.548466
 ```
 
-```_average_RMSD``` takes a list of several RMSD Panda Dateframes and returns the average RMSD Panda Dataframe as shown below:
+```_average_RMSD``` takes a list of several RMSD Pandas Dateframes and returns the average RMSD Pandas Dataframe as shown below:
 
 ```
 time 	RMSD
@@ -135,7 +135,7 @@ time 	RMSD
 498 	2.452927
 499 	2.470744
 ``` 
-```_plot_RMSD``` takes an (average) RMSD Panda Dateframes, performs the linear fitting and plots the results as shown below (raw data for this example can be downloaded from <a href="data/rod_diffusion/20210321raw_data_rod_rotational_diffsuion.zip">here</a>):
+```_plot_RMSD``` takes an (average) RMSD Pandas Dateframe, performs the linear fitting and plots the results as shown below (raw data for this example can be downloaded from <a href="data/rod_diffusion/20210321raw_data_rod_rotational_diffsuion.zip">here</a>):
 
 <img src="images/rod_diffusion/rotational_diffusion.png" alt="github page" height="200" />
 
