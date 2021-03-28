@@ -72,15 +72,15 @@
 
 ### **<span style="color:#2da266">2014</span>**
 
-##### 9. <span style="color:#2da266">Y Liu</span>, X Zhang. *A unified mechanism for the stability of surface nanobubbles: Contact line pinning and supersaturation.* <span style="color:#00bfff">J. Chem. Phys.</span> 141, 134702 (2014).^[Link](http://aip.scitation.org/doi/10.1063/1.4896937)  
+##### 9. <span style="color:#2da266">Y Liu</span>, X Zhang. *A unified mechanism for the stability of surface nanobubbles: Contact line pinning and supersaturation.* <span style="color:#00bfff">J. Chem. Phys.</span> 141, 134702 (2014). <span style="color:#ff931e">[citations: 79]</span>^[Link](http://aip.scitation.org/doi/10.1063/1.4896937)  
 
-##### 8. <span style="color:#2da266">Y Liu</span>, J Wang, X Zhang, W Wang. *Contact line pinning and the relationship between nanobubbles and substrates.* <span style="color:#00bfff">J. Chem. Phys.</span> 140, 54705 (2014).^[Link](http://aip.scitation.org/doi/10.1063/1.4863448)  
+##### 8. <span style="color:#2da266">Y Liu</span>, J Wang, X Zhang, W Wang. *Contact line pinning and the relationship between nanobubbles and substrates.* <span style="color:#00bfff">J. Chem. Phys.</span> 140, 54705 (2014). <span style="color:#ff931e">[citations: 57]</span>^[Link](http://aip.scitation.org/doi/10.1063/1.4863448)  
 
 ##### 7. Q Guo, <span style="color:#2da266">Y Liu</span>, G Jiang, X Zhang. *Condensation of droplets on nanopillared hydrophobic substrates.* <span style="color:#00bfff">Soft Matter</span> 10, 1182 (2014).^[Link](http://xlink.rsc.org/?DOI=c3sm52260a)  
 
 ### **<span style="color:#2da266">2013</span>**
 
-##### 6. <span style="color:#2da266">Y Liu</span>, X Zhang. *Nanobubble stability induced by contact line pinning.* <span style="color:#00bfff">J. Chem. Phys.</span> 138, 014706 (2013).^[Link](http://aip.scitation.org/doi/10.1063/1.4773249) 
+##### 6. <span style="color:#2da266">Y Liu</span>, X Zhang. *Nanobubble stability induced by contact line pinning.* <span style="color:#00bfff">J. Chem. Phys.</span> 138, 014706 (2013). <span style="color:#ff931e">[citations: 127]</span>^[Link](http://aip.scitation.org/doi/10.1063/1.4773249) 
 
 ##### 5. <span style="color:#2da266">Y Liu</span>, J Wang, X Zhang. *Accurate determination of the vapor-liquid-solid contact line tension and the viability of Young equation.* <span style="color:#00bfff">Sci. Rep.</span> 3, 2008 (2013).^[Link](http://www.nature.com/articles/srep02008)  
 
