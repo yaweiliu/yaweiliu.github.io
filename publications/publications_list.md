@@ -32,7 +32,7 @@
 
 ##### 26. R Ganti, <span style="color:#2da266">Y Liu</span>, D Frenkel. *Hamiltonian transformation to compute thermo-osmotic forces.* <span style="color:#ff931e">Phys. Rev. Lett.</span> 121, 068002 (2018).^[Link](https://link.aps.org/doi/10.1103/PhysRevLett.121.068002)  
 
-##### 25. J Zou, H Zhang, Z Guo, <span style="color:#2da266">Y Liu</span>, J Wei, Y Huang, X Zhang. *Surface nanobubbles nucleate liquid boiling.* <span style="color:#00bfff">Langmuir</span> 34, 14096–14101 (2018).^[Link](http://pubs.acs.org/doi/10.1021/acs.langmuir.8b03290)  
+##### 25. J Zou, H Zhang, Z Guo, <span style="color:#2da266">Y Liu</span>, J Wei, Y Huang, X Zhang. *Surface nanobubbles nucleate liquid boiling.* <span style="color:#00bfff">Langmuir</span> 34, 14096 (2018).^[Link](http://pubs.acs.org/doi/10.1021/acs.langmuir.8b03290)  
 
 ##### 24. H Zhang, S Chen, Z Guo, <span style="color:#2da266">Y Liu</span>, F Bresme, X Zhang. *Contact line pinning effects influence determination of the line tension of droplets adsorbed on substrates.* <span style="color:#00bfff">J. Phys. Chem. C</span> 122, 17184 (2018)^[Link](http://pubs.acs.org/doi/10.1021/acs.jpcc.8b03588)  
 
