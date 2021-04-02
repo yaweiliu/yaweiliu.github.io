@@ -7,7 +7,7 @@
 The diffusion coefficient ($D_t$) and dynamic viscosity ($\eta$) are fundamental properties of a solvent, which are embedded into many dimensionless numbers (such as the Schmidt number and Reynolds number) for hydrodynamic behaviours, thus often need to know for describing some processes involving the hydrodynamic interactions, such as the dynamics of colloidal particles in the solvent [1].
 
 In particle dynamics simulations, $D_t$ can be calculated from the slope of the mean-square displacement averaged over the trajectory of a solvent particle,
-$$D_t = \lim_{t\rightarrow \infty} \dfrac{\partial}{\partial}\dfrac{\langle|\textbf{r}(t)-\textbf{r}(0)|^2\rangle}{6}$$
+$$D_t = \lim_{t\rightarrow \infty} \dfrac{\partial}{\partial}\dfrac{\langle|\textbf{r}(t)-\textbf{r}(0)|^2\rangle}{6t}$$
 where $\textbf{r}(t)$ denotes the particle trajectory that is continuous with time ($t$) in Cartesian space. $\eta$ can be calculated by using the Green-Kubo relation:
 $$\eta = \dfrac{V}{k_BT}\int_0^\infty \langle \delta p_{xy}(t) \delta p_{xy}(0) \rangle dt$$
 where $V$ is the volume of the simulation box, $k_B$ is the Boltzmann constant, $T$ is the temperature, and the integral term is the autocorrelation function of the off-diagonal element of the pressure tensor ($\delta p_{xy}(t)$).
