@@ -1,6 +1,6 @@
 #### [HOME](../../index.html) [CONTENTS](../index.html)
 
-## Dynamics simulations of self-assembly of nanorods (Tutorial I: Preparation)
+## Dynamics simulations of self-assembly of nanoparticles (Tutorial I: Preparation)
  
 *by Yawei Liu  @ Sydney, Australia 2021/04/04*
 
@@ -28,14 +28,16 @@ If you want to follow these tutorials, I recommend installing these softwares/pa
 * Python packages for analysis and visualisation of simulation data:
     * [Freud](https://freud.readthedocs.io/en/latest/): ```conda install -c conda-forge freud```
     * [Plato](https://plato-draw.readthedocs.io/en/latest/): ```pip install plato-draw```
-        * To use Plato in Jupyterlab, install [nodejs](https://nodejs.org/en/) and [pythreejs](https://github.com/jupyter-widgets/pythreejs) as follows:
-            * ```conda install -c conda-forge 'nodejs>=12'```
-            * ```conda install -c conda-forge pythreejs```
-            * ```jupyter labextension list```
-            * ```jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager```
-            * ```jupyter labextension install --no-build jupyter-datawidgets/extension```
-            * ```jupyter labextension install jupyter-threejs```
-            * ```jupyter labextension list``````
+    
+    To use Plato in Jupyterlab, install [nodejs](https://nodejs.org/en/) and [pythreejs](https://github.com/jupyter-widgets/pythreejs) as follows:
+    
+    * ```conda install -c conda-forge 'nodejs>=12'```
+    * ```conda install -c conda-forge pythreejs```
+    * ```jupyter labextension list```
+    * ```jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager```
+    * ```jupyter labextension install --no-build jupyter-datawidgets/extension```
+    * ```jupyter labextension install jupyter-threejs```
+    * ```jupyter labextension list``````
 
 * Also, some softwares like VMD can also be used to visualise the simulation system, I am going to write some Python scripts to convert the simulation data to the file that can be read by these softwares.
 
