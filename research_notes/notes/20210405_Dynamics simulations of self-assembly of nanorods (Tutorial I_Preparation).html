@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Dr Yawei Liu - Research notes contents</title>
+<title>20210405_Dynamics simulations of self-assembly of nanorods (Tutorial I_Preparation)</title>
 
 
 <style type="text/css">
@@ -331,36 +331,82 @@ kbd {
 
 <body>
 
-<h4 id="toc_0"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_0"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
-<h1 id="toc_1">Contents</h1>
+<h2 id="toc_1">Dynamics simulations of self-assembly of nanorods (Tutorial I: Preparation)</h2>
 
-<h2 id="toc_2"></h2>
+<p><em>by Yawei Liu  @ Sydney, Australia 2021/04/04</em></p>
 
+<p>In following weeks, I am going to write some tutorials on dynamics simulations of the self-assembly of rod-shaped particles (or other particles with any shapes) using an overlapping-sphere model, which we did in our previous work [1,2,3]. From these tutorials, we will know:</p>
 
-<!--CONTENTS-->
-<h4 id="toc_3">9. 2021/04/05 20210405_Dynamics simulations of self-assembly of nanorods (Tutorial I: Preparation)
-  <a href="notes/20210405_Dynamics simulations of self-assembly of nanorods (Tutorial I_Preparation).html">more...</a></h4>
-<h4 id="toc_3">8. 2021/03/28 Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS
-  <a href="notes/20210328_Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS.html">more...</a></h4>
-<h4 id="toc_3">7. 2021/03/21 Analysing simulation trajectory to obtain the rotational diffusion coefficient
-  <a href="notes/20210321_Analysing simulation trajectory to obtain the rotational diffusion coefficient.html">more...</a></h4>
-<h4 id="toc_3">6. 2021/03/15 JCP selected our recent paper as an Editor's Pick
-  <a href="notes/20210315_JCP selected our recent paper as an Editor's Pick.html">more...</a></h4>
-<h4 id="toc_3">5. 2021/03/08 A mechanical approach to control pressure in LAMMPS simulations
-  <a href="notes/20210308_A mechanical approach to control pressure in LAMMPS simulations.html">more...</a></h4>
-<h4 id="toc_3">4. 2021/03/01 Creating an icosphere with Python
-  <a href="notes/20210301_Creating an icosphere with Python.html">more...</a></h4>
-<h4 id="toc_3">3. 2021/02/22 From disordered to ordered: An example of self-assembly of nanorods
-  <a href="notes/20210222_From disordered to ordered- An example of self-assembly of nanorods.html">more...</a></h4>
-<h4 id="toc_3">2. 2021/02/17 Units conversion in dissipative particle dynamics (DPD)
-  <a href="notes/20210217_Units conversion in dissipative particle dynamics (DPD).html">more...</a></h4>
-<h4 id="toc_3">1. 2021/02/14 A new place to see our reseaches
-  <a href="notes/20210214_A new place to see our reseaches.html">more...</a></h4>
+<ul>
+<li>Using Python to create the model for a given particle (e.g. the rod-shaped particle in this case) with individual identical spheres. </li>
+<li>Using Python to write a data file for the initial configurations that can be read by LAMMPS. </li>
+<li>Using LAMMPS to perform dynamics simulations.</li>
+<li>Using Python to process the simulation data.</li>
+<li>Using Python to visualise the simulation system.</li>
+<li>AND some details you may meet in this type of simulations.</li>
+</ul>
+
+<p>If you want to follow these tutorials, I recommend installing these softwares/packages in your computer/laptop (Linux and Mac OS are recommended) as follows:</p>
+
+<ul>
+<li><p>Python and related packages:</p>
+
+<ul>
+<li>Download <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> for your computer/laptop and install it. This will also install Python3 in your device.</li>
+<li>Install these Python packages using <code>conda install package_name</code>: Numpy, Scipy, Pandas, Matplotlib.</li>
+<li>Install Jupyterlab using <code>conda install -c conda-forge jupyterlab</code>. (Tips: If you want to use Plato to visualise the simulation system in Jupyterlab, please install <strong>jupyterlab2</strong>.)</li>
+</ul></li>
+<li><p>Lammps and related packages:</p>
+
+<ul>
+<li>Download <a href="https://github.com/lammps/lammps">LAMMPS</a> from Github.</li>
+<li>In <code>/src</code> folder, pre-install these packages using <code>make yes-package_name</code>: DIPOLE, MOLECULE, RIGID, KSPACE.</li>
+<li>Install LAMMPS.</li>
+</ul></li>
+<li><p>Python packages for analysis and visualisation of simulation data:</p>
+
+<ul>
+<li><a href="https://freud.readthedocs.io/en/latest/">Freud</a>: <code>conda install -c conda-forge freud</code></li>
+<li><a href="https://plato-draw.readthedocs.io/en/latest/">Plato</a>: <code>pip install plato-draw</code>
+
+<ul>
+<li>To use Plato in Jupyterlab, install <a href="https://nodejs.org/en/">nodejs</a> and <a href="https://github.com/jupyter-widgets/pythreejs">pythreejs</a> as follows:
+
+<ul>
+<li><code>conda install -c conda-forge &#39;nodejs&gt;=12&#39;</code></li>
+<li><code>conda install -c conda-forge pythreejs</code></li>
+<li><code>jupyter labextension list</code></li>
+<li><code>jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager</code></li>
+<li><code>jupyter labextension install --no-build jupyter-datawidgets/extension</code></li>
+<li><code>jupyter labextension install jupyter-threejs</code></li>
+<li><code>jupyter labextension list</code>&ldquo;`</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Also, some softwares like VMD can also be used to visualise the simulation system, I am going to write some Python scripts to convert the simulation data to the file that can be read by these softwares.</p></li>
+</ul>
+
+<h3 id="toc_2">References</h3>
+
+<p>[1] <a href="http://aip.scitation.org/doi/10.1063/1.5096193">Liu, Y.; Widmer-Cooper, A. A Versatile Simulation Method for Studying Phase Behavior and Dynamics in Colloidal Rod and Rod-Polymer Suspensions. J. Chem. Phys. 2019, 150 (24), 244508.</a></p>
+
+<p>[2] <a href="https://linkinghub.elsevier.com/retrieve/pii/S2666386420301521">Sharma, A.; Wojciechowski, J. P.; Liu, Y.; Pelras, T.; Wallace, C. M.; Müllner, M.; Widmer-Cooper, A.; Thordarson, P.; Lakhwani, G. The Role of Fiber Agglomeration in Formation of Perylene-Based Fiber Networks. Cell Reports Phys. Sci. 2020, 1 (8), 100148.</a></p>
+
+<p>[3] <a href="https://doi.org/10.1063/5.0041285">Liu, Y.; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. J. Chem. Phys. 2021, 154 (10), 104120.</a></p>
+
+<h5 id="toc_3">Github Page / Gitee Page / Subscription</h5>
+
+<p><img src="images/github_yawei.png" alt="github page" width="80" height="80" />
+<img src="images/gitee_yawei.png" alt="gitee page" width="80" height="80" />
+<img src="images/wechat.png" alt="wechat" width="80" height="80" /></p>
+
+<p>&copy; 2021 Yawei Liu. All content licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode#languages">Creative Commons Attribution-NonCommercial License 4.0 International (CC BY-NC 4.0)</a>.</p>
 
 <h2 id="toc_4"></h2>
 
-<h4 id="toc_5"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_5"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
 
 
