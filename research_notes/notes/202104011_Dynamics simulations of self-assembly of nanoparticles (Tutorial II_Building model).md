@@ -4,9 +4,9 @@
  
 *by Yawei Liu  @ Sydney, Australia 2021/04/11*
 
-In this tutorials, I am going to show how to using Python to build rigid overlapping-sphere model [1] for nanoparticles with a given geometry.
+In this tutorial, I am going to show how to using Python to build rigid overlapping-sphere model [1] for nanoparticles with a given geometry.
 
-The first example is a rod-shaped particle, which is described as a *spherocylinder* consisting of a cylindrical segment of length $L$ and diameter $D$ capped with two hemispheres. In the overlapping-sphere model, this spherocylinder is represented by a rigid linear chain of overlapping sphere of diameter $D$ with their centres distributed uniformly on a line segment of length $L$. The distance between consecutive spheres should be small enough so that the side effects associated with the grooves between overlapping spheres is negligible (I often use a value $\Delta l \le 0.5$ [1,2]).
+The first example is a rod-shaped particle, which is described as a *spherocylinder* consisting of a cylindrical segment of length $L$ and diameter $D$ capped with two hemispheres. In the overlapping-sphere model, this spherocylinder is represented by a rigid linear chain of overlapping sphere of diameter $D$ with their centres distributed uniformly on a line segment of length $L$. The distance between consecutive spheres should be small enough so that the side effects associated with the grooves between overlapping spheres is negligible (I often use a value $\Delta l \le 0.5$).
 
 Here is the Python code to define a Class for rod-shaped particles: 
 
@@ -43,8 +43,8 @@ Then, for example, one can use ```rod=Rod(L=10,D=1,N=21)``` to build a rod with 
 
 Things need to be clarified are:
 
-* Each sphere has an attribute of type, which can be used to distinguish spheres with different properties in the model, such as having different interactions.
-* The first two spheres are special spheres used to record the position and the orientation of the particle in the lab frame (i.e. XYZ). We are going to define two dipoles in these two spheres in LAMMPS simulations with each one represents the unit vector along the axis of the nanoparticle (tips: we only need one dipole for rods as they are uniaxial, but we need two dipoles for nanoparticles with an arbitrary shape). For example, in above rod, the first dipole has its unit vector $\vec{u}=[1,0,0]$ and the second one has its unit vector $\vec{v}=[0,1,0]$ (again, this is not necessary for rods), which means the rod is parallel to the $X$-axis. This operation is very useful because we only need to save the positions and dipoles of these two spheres during our simulations, and then can rebuild the whole nanoparticle according to these informations: the position of the first sphere (called origin) and the two vectors $\vec{u}$ and $\vec{v}$. 
+* Each sphere has an attribute of type, which can be used to distinguish spheres with different properties in the model, such as having different interactions with other spheres.
+* The first two spheres are special spheres used to record the position and the orientation of the particle in the lab frame (i.e. XYZ). We are going to define two dipoles in these two spheres in LAMMPS simulations with each one represents an unit vector along the axis of the nanoparticle (tips: we only need one dipole for rods as they are uniaxial, but we need two dipoles for nanoparticles with an arbitrary shape). For example, in above rod, the first dipole has its unit vector $\vec{u}=[1,0,0]$ and the second one has its unit vector $\vec{v}=[0,1,0]$ (again, this is not necessary for rods), which means the rod is parallel to the $X$-axis. This operation is very useful because we only need to save the positions and dipoles of these two spheres during our simulations, and then can rebuild the whole nanoparticle according to these informations: the position of the first sphere (called origin) and the two vectors $\vec{u}$ and $\vec{v}$. 
 
 The second example is a helical particle with $N$ spheres having diameter $D$ evenly arranged in a helical string of contour length $L$, pitch $p$ and radius $r$. The centres of these spheres are
 $$x_i=r \cos(t_i)$$
