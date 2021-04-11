@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Dr Yawei Liu - Research notes contents</title>
+<title>202104011_Dynamics simulations of self-assembly of nanoparticles (Tutorial II_Building model)</title>
 
 
 <style type="text/css">
@@ -331,38 +331,122 @@ kbd {
 
 <body>
 
-<h4 id="toc_0"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_0"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
-<h1 id="toc_1">Contents</h1>
+<h2 id="toc_1">Dynamics simulations of self-assembly of nanoparticles (Tutorial II: Building model)</h2>
 
-<h2 id="toc_2"></h2>
+<p><em>by Yawei Liu  @ Sydney, Australia 2021/04/11</em></p>
 
+<p>In this tutorials, I am going to show how to using Python to build rigid overlapping-sphere model [1] for nanoparticles with a given geometry.</p>
 
-<!--CONTENTS-->
-<h4 id="toc_3">10. 2021/04/11 Dynamics simulations of self-assembly of nanoparticles (Tutorial II: Building model)
-  <a href="notes/202104011_Dynamics simulations of self-assembly of nanoparticles (Tutorial II_Building model).html">more...</a></h4>
-<h4 id="toc_3">9. 2021/04/05 Dynamics simulations of self-assembly of nanoparticles (Tutorial I: Preparation)
-  <a href="notes/20210405_Dynamics simulations of self-assembly of nanoparticles (Tutorial I_Preparation).html">more...</a></h4>
-<h4 id="toc_3">8. 2021/03/28 Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS
-  <a href="notes/20210328_Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS.html">more...</a></h4>
-<h4 id="toc_3">7. 2021/03/21 Analysing simulation trajectory to obtain the rotational diffusion coefficient
-  <a href="notes/20210321_Analysing simulation trajectory to obtain the rotational diffusion coefficient.html">more...</a></h4>
-<h4 id="toc_3">6. 2021/03/15 JCP selected our recent paper as an Editor's Pick
-  <a href="notes/20210315_JCP selected our recent paper as an Editor's Pick.html">more...</a></h4>
-<h4 id="toc_3">5. 2021/03/08 A mechanical approach to control pressure in LAMMPS simulations
-  <a href="notes/20210308_A mechanical approach to control pressure in LAMMPS simulations.html">more...</a></h4>
-<h4 id="toc_3">4. 2021/03/01 Creating an icosphere with Python
-  <a href="notes/20210301_Creating an icosphere with Python.html">more...</a></h4>
-<h4 id="toc_3">3. 2021/02/22 From disordered to ordered: An example of self-assembly of nanorods
-  <a href="notes/20210222_From disordered to ordered- An example of self-assembly of nanorods.html">more...</a></h4>
-<h4 id="toc_3">2. 2021/02/17 Units conversion in dissipative particle dynamics (DPD)
-  <a href="notes/20210217_Units conversion in dissipative particle dynamics (DPD).html">more...</a></h4>
-<h4 id="toc_3">1. 2021/02/14 A new place to see our reseaches
-  <a href="notes/20210214_A new place to see our reseaches.html">more...</a></h4>
+<p>The first example is a rod-shaped particle, which is described as a <em>spherocylinder</em> consisting of a cylindrical segment of length \(L\) and diameter \(D\) capped with two hemispheres. In the overlapping-sphere model, this spherocylinder is represented by a rigid linear chain of overlapping sphere of diameter \(D\) with their centres distributed uniformly on a line segment of length \(L\). The distance between consecutive spheres should be small enough so that the side effects associated with the grooves between overlapping spheres is negligible (I often use a value \(\Delta l \le 0.5\) [1,2]).</p>
+
+<p>Here is the Python code to define a Class for rod-shaped particles: </p>
+
+<div><pre><code class="language-none">import numpy as np
+class Rod():
+    def __init__(self,L,D,N):
+        self.L = L
+        self.N = N
+        self.D = D
+        
+        dl = L/(self.N-1)
+        self.atoms = np.array([[i*dl,0,0] for i in range(N)])
+        self.origin = self.atoms[0]
+        self.atom_types = np.array([3]*N)
+        self.atom_types[0] = 1
+        self.atom_types[1] = 2
+        
+        self.cm = np.sum(self.atoms,axis=0)/N
+        
+        self.u = np.array([1.,0,0])
+        self.v = np.array([0,1.,0])
+        
+        print(&#39;Rod contour length:        %f&#39; %self.L)
+        print(&#39;Rod diameter:              %f&#39; %self.D)
+        print(&#39;Rod atom number:           %d&#39; %self.N)
+        print(&#39;Rod atom types:           &#39;,self.atom_types)
+        print(&#39;Rod origin:               &#39;,self.origin)
+        print(&#39;Rod cm:                   &#39;,self.cm)</code></pre></div>
+
+<p>Then, for example, one can use <code>rod=Rod(L=10,D=1,N=21)</code> to build a rod with \(L=10\), \(D=1\) and \(N=21\) as shown below:</p>
+
+<p><img src="images/assembly_nanoparticles/rod.png" alt="github page" height="300" /></p>
+
+<p>Things need to be clarified are:</p>
+
+<ul>
+<li>Each sphere has an attribute of type, which can be used to distinguish spheres with different properties in the model, such as having different interactions.</li>
+<li>The first two spheres are special spheres used to record the position and the orientation of the particle in the lab frame (i.e. XYZ). We are going to define two dipoles in these two spheres in LAMMPS simulations with each one represents the unit vector along the axis of the nanoparticle (tips: we only need one dipole for rods as they are uniaxial, but we need two dipoles for nanoparticles with an arbitrary shape). For example, in above rod, the first dipole has its unit vector \(\vec{u}=[1,0,0]\) and the second one has its unit vector \(\vec{v}=[0,1,0]\) (again, this is not necessary for rods), which means the rod is parallel to the \(X\)-axis. This operation is very useful because we only need to save the positions and dipoles of these two spheres during our simulations, and then can rebuild the whole nanoparticle according to these informations: the position of the first sphere (called origin) and the two vectors \(\vec{u}\) and \(\vec{v}\). </li>
+</ul>
+
+<p>The second example is a helical particle with \(N\) spheres having diameter \(D\) evenly arranged in a helical string of contour length \(L\), pitch \(p\) and radius \(r\). The centres of these spheres are
+\[x_i=r \cos(t_i)\]
+\[y_i=r \sin(t_i)\]
+\[z_i=p \frac{t_i}{2\pi}\]
+with \(\Delta t = t_{i+1} - t_{i}\) and \(\dfrac{L}{N-1}=\Delta t \sqrt{r^2+\bigg(\dfrac{p}{2\pi}\bigg)^2}\).</p>
+
+<p>Here is the Python code for a helical particle:</p>
+
+<div><pre><code class="language-none">import numpy as np
+class Helix():
+    def __init__(self,L,D,N,p,r,flag=&#39;right&#39;):
+        self.L = L
+        self.N = N
+        self.p = p
+        self.r = r
+        self.D = D
+        
+        dt = L/(N-1)/math.sqrt(r**2.+(p/2/math.pi)**2.)
+        ti = dt*np.arange(N)
+        if flag==&#39;right&#39;: iy = r*np.cos(ti)
+        else: iy = -r*np.cos(ti)
+        iz = r*np.sin(ti)
+        ix = p*ti/2./np.pi
+        self.atoms = np.concatenate(([ix],[iy],[iz])).T
+        
+        self.origin = self.atoms[0]
+        self.atom_types = np.array([3]*N)
+        self.atom_types[0] = 1
+        self.atom_types[1] = 2
+        
+        self.cm = np.sum(self.atoms,axis=0)/N
+        
+        self.u = np.array([1.,0,0])
+        self.v = np.array([0,1.,0])
+        
+        self.Lambda = np.linalg.norm(self.atoms[-1])
+        
+        print(&#39;contour length:        %.3f&#39; %self.L)
+        print(&#39;Euclidean length:      %.3f&#39; %self.Lambda)
+        print(&#39;diameter:              %.3f&#39; %self.D)
+        print(&#39;atom number:           %d&#39; %self.N)
+        print(&#39;picth:                 %.3f&#39; %self.p)
+        print(&#39;radius:                %.3f&#39; %self.r)
+        print(&#39;atom types:           &#39;,self.atom_types)
+        print(&#39;origin:               &#39;,self.origin)
+        print(&#39;cm:                   &#39;,self.cm)</code></pre></div>
+
+<p>Calling <code>helix=Helix(L=10,D=1,N=21,p=4,r=0.3,flag=&#39;left&#39;)</code> can build a left-handed helical particle
+as shown below:</p>
+
+<p><img src="images/assembly_nanoparticles/helix.png" alt="github page" height="300" /></p>
+
+<h3 id="toc_2">References</h3>
+
+<p>[1] <a href="http://aip.scitation.org/doi/10.1063/1.5096193">Liu, Y.; Widmer-Cooper, A. A Versatile Simulation Method for Studying Phase Behavior and Dynamics in Colloidal Rod and Rod-Polymer Suspensions. J. Chem. Phys. 2019, 150 (24), 244508.</a></p>
+
+<h5 id="toc_3">Github Page / Gitee Page / Subscription</h5>
+
+<p><img src="images/github_yawei.png" alt="github page" width="80" height="80" />
+<img src="images/gitee_yawei.png" alt="gitee page" width="80" height="80" />
+<img src="images/wechat.png" alt="wechat" width="80" height="80" /></p>
+
+<p>&copy; 2021 Yawei Liu. All content licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode#languages">Creative Commons Attribution-NonCommercial License 4.0 International (CC BY-NC 4.0)</a>.</p>
 
 <h2 id="toc_4"></h2>
 
-<h4 id="toc_5"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_5"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
 
 
