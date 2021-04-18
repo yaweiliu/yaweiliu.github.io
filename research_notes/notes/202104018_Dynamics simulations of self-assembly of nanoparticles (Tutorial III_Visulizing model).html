@@ -382,7 +382,7 @@ def _plato_one_body(body,size=(20, 20)):
     atoms = np.concatenate((body.atom_types[:,None], body.atoms-body.cm), axis=1)
     np.savetxt(f, atoms, fmt=&#39;%3d %.6f %.6f %.6f&#39;, delimiter=&#39; &#39;)</code></pre></div>
 
-<p>Then one can open the <code>xyz</code> file with VMD to visualise the model. I often use an VMD script to do this so the render properties can be easily controlled. Here is an example of the VMD script: </p>
+<p>Then one can open the <code>xyz</code> file with VMD to visualize the model. I often use an VMD script to do this so the render properties can be easily controlled. Here is an example of the VMD script named <code>vmd.tcl</code>: </p>
 
 <div><pre><code class="language-none">color change rgb  0 0.122 0.467 0.706 ;# blue
 color change rgb  1 0.7 0.2 0.1 ;# red

@@ -53,7 +53,7 @@ with open('model.xyz','w') as f:
     np.savetxt(f, atoms, fmt='%3d %.6f %.6f %.6f', delimiter=' ')
 ```
 
-Then one can open the ```xyz``` file with VMD to visualise the model. I often use an VMD script to do this so the render properties can be easily controlled. Here is an example of the VMD script: 
+Then one can open the ```xyz``` file with VMD to visualize the model. I often use an VMD script to do this so the render properties can be easily controlled. Here is an example of the VMD script named ```vmd.tcl```: 
 
 ```
 color change rgb  0 0.122 0.467 0.706 ;# blue
