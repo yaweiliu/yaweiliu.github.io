@@ -6,7 +6,7 @@
 
 In this tutorial, I am going to show how to visualise the model of nanoparticles we create in last tutorial.
 
-The fist method is using [Plato](https://plato-draw.readthedocs.io/en/latest/), which can directly show the model in [Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/). The Python code to do this is
+The first method is using [Plato](https://plato-draw.readthedocs.io/en/latest/), which can directly show the model in [Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/). The Python code to do this is
 
 ```
 import matplotlib
