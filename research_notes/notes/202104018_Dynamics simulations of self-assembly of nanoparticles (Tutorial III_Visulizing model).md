@@ -109,11 +109,11 @@ $all set radius 0.5
 
 mol selection "type H"
 mol addrep top
-mol modcolor 0 top colorID 0
+mol modcolor 0 top colorID 1
 
 mol selection "type He"
 mol addrep top
-mol modcolor 1 top colorID 1
+mol modcolor 1 top colorID 0
 
 mol selection "type Li"
 mol addrep top
