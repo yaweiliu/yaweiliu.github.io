@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Dr Yawei Liu - Research notes contents</title>
+<title>202104018_Dynamics simulations of self-assembly of nanoparticles (Tutorial III_Visulizing model)</title>
 
 
 <style type="text/css">
@@ -331,40 +331,137 @@ kbd {
 
 <body>
 
-<h4 id="toc_0"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_0"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
-<h1 id="toc_1">Contents</h1>
+<h2 id="toc_1">Dynamics simulations of self-assembly of nanoparticles (Tutorial III: Visulizing model)</h2>
 
-<h2 id="toc_2"></h2>
+<p><em>by Yawei Liu  @ Sydney, Australia 2021/04/18</em></p>
+
+<p>In this tutorial, I am going to show how to visualise the model of nanoparticles we create in last tutorial.</p>
+
+<p>The fist method is using <a href="https://plato-draw.readthedocs.io/en/latest/">Plato</a>, which can directly show the model in <a href="https://jupyterlab.readthedocs.io/en/stable/">Jupyterlab</a>. The Python code to do this is</p>
+
+<div><pre><code class="language-none">import matplotlib
+import plato
+import plato.draw.pythreejs as draw
+
+def _plato_one_body(body,size=(20, 20)):
+    red = matplotlib.colors.to_rgba(&#39;tab:red&#39;)
+    green = matplotlib.colors.to_rgba(&#39;tab:green&#39;)
+    blue = matplotlib.colors.to_rgba(&#39;tab:blue&#39;)
+
+    positions = body.atoms
+    positions = positions-body.cm
+    colors = np.zeros((body.N,4))
+    colors[:] = green
+    colors[body.atom_types==1] = red
+    colors[body.atom_types==2] = blue
+    
+    radii = np.zeros(body.N)
+    radii[:] = body.D/2.
+    
+    sphere_prim = draw.Spheres(
+        positions=positions,
+        radii=radii,
+        colors=colors,
+        vertex_count=200
+        )
+    return draw.Scene((sphere_prim), zoom=1.,size=size)</code></pre></div>
+
+<p>Running <code>body=Rod(L=10,D=1,N=21)</code> and <code>_plato_one_body(body).show()</code>, one can obtain an interactive window of the rod model (tips: the model can be rotated using the mouse), as shown below:</p>
+
+<p><img src="images/assembly_nanoparticles/plato_rod.png" alt="github page" height="300" /></p>
+
+<p>Another method is writing the information of the model into an external file and then using VMD to visualise it.</p>
+
+<p>Here is a Python script to create an <code>xyz</code> file of the model:</p>
+
+<div><pre><code class="language-none">with open(&#39;model.xyz&#39;,&#39;w&#39;) as f:
+    f.write(&#39;%d\n&#39; %(body.N))
+    f.write(&#39;\n&#39;)
+    atoms = np.concatenate((body.atom_types[:,None], body.atoms-body.cm), axis=1)
+    np.savetxt(f, atoms, fmt=&#39;%3d %.6f %.6f %.6f&#39;, delimiter=&#39; &#39;)</code></pre></div>
+
+<p>Then one can open the <code>xyz</code> file with VMD to visualise the model. I often use an VMD script to do this so the render properties can be easily controlled. Here is an example of the VMD script: </p>
+
+<div><pre><code class="language-none">color change rgb  0 0.122 0.467 0.706 ;# blue
+color change rgb  1 0.7 0.2 0.1 ;# red
+color change rgb  2 0.5 0.5 0.5 ;# grey
+color change rgb  3 0.7 0.4 0.0 ;# orange
+#color change rgb  4 0.74 0.74 0.13 ;# yellow
+color change rgb  4 0.68 0.51 0.00 ;# yellow
+color change rgb  7 0.17 0.63 0.17 ;# green
+color change rgb 9 0.89 0.47 0.76 ;# pink
+color change rgb 10 0.09 0.75 0.81 ;# cyan
+color change rgb 11 0.58 0.40 0.74 ;# purple
+
+# make sure, that the main menu is active
+menu main on
+# modify display settings
+display projection orthographic
+#orthographic
+#axes location off
+color Display Background white
+
+# change material &#39;Diffuse&#39;
+material change ambient Diffuse 0.00
+material change specular Diffuse 0.0
+material change diffuse Diffuse 0.9
+material change shininess Diffuse 0.7
+material change opacity Diffuse 1.0
+material change outline Diffuse 4.
+material change outlinewidth Diffuse 1.
 
 
-<!--CONTENTS-->
-<h4 id="toc_3">11. 2021/04/18 Dynamics simulations of self-assembly of nanoparticles (Tutorial III: Visulizing model)
-  <a href="notes/202104011_Dynamics simulations of self-assembly of nanoparticles (Tutorial III_Visulizing model).html">more...</a></h4>
-<h4 id="toc_3">10. 2021/04/11 Dynamics simulations of self-assembly of nanoparticles (Tutorial II: Building model)
-  <a href="notes/202104011_Dynamics simulations of self-assembly of nanoparticles (Tutorial II_Building model).html">more...</a></h4>
-<h4 id="toc_3">9. 2021/04/05 Dynamics simulations of self-assembly of nanoparticles (Tutorial I: Preparation)
-  <a href="notes/20210405_Dynamics simulations of self-assembly of nanoparticles (Tutorial I_Preparation).html">more...</a></h4>
-<h4 id="toc_3">8. 2021/03/28 Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS
-  <a href="notes/20210328_Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS.html">more...</a></h4>
-<h4 id="toc_3">7. 2021/03/21 Analysing simulation trajectory to obtain the rotational diffusion coefficient
-  <a href="notes/20210321_Analysing simulation trajectory to obtain the rotational diffusion coefficient.html">more...</a></h4>
-<h4 id="toc_3">6. 2021/03/15 JCP selected our recent paper as an Editor's Pick
-  <a href="notes/20210315_JCP selected our recent paper as an Editor's Pick.html">more...</a></h4>
-<h4 id="toc_3">5. 2021/03/08 A mechanical approach to control pressure in LAMMPS simulations
-  <a href="notes/20210308_A mechanical approach to control pressure in LAMMPS simulations.html">more...</a></h4>
-<h4 id="toc_3">4. 2021/03/01 Creating an icosphere with Python
-  <a href="notes/20210301_Creating an icosphere with Python.html">more...</a></h4>
-<h4 id="toc_3">3. 2021/02/22 From disordered to ordered: An example of self-assembly of nanorods
-  <a href="notes/20210222_From disordered to ordered- An example of self-assembly of nanorods.html">more...</a></h4>
-<h4 id="toc_3">2. 2021/02/17 Units conversion in dissipative particle dynamics (DPD)
-  <a href="notes/20210217_Units conversion in dissipative particle dynamics (DPD).html">more...</a></h4>
-<h4 id="toc_3">1. 2021/02/14 A new place to see our reseaches
-  <a href="notes/20210214_A new place to see our reseaches.html">more...</a></h4>
+###delete current molecules &amp; load new molecules
+if {[molinfo num] &gt; 0} { 
+  mol delete all
+}
 
-<h2 id="toc_4"></h2>
+set fname &quot;model.xyz&quot;
+mol new $fname waitfor all
+##delete all rep
+set numrep [molinfo top get numreps]
+for {set i 0} {$i &lt; $numrep} {incr i} {mol delrep $i top}
 
-<h4 id="toc_5"><a href="../index.html">HOME</a></h4>
+
+scale by 1.5
+
+mol selection all
+mol representation VDW 1.0 30.0
+mol material Diffuse
+mol color colorID 0
+
+set all [atomselect top &quot;all&quot;]
+$all set radius 0.5
+
+mol selection &quot;type H&quot;
+mol addrep top
+mol modcolor 0 top colorID 0
+
+mol selection &quot;type He&quot;
+mol addrep top
+mol modcolor 1 top colorID 1
+
+mol selection &quot;type Li&quot;
+mol addrep top
+mol modcolor 2 top colorID 7</code></pre></div>
+
+<p>To use this VMD script, just type <code>source vmd.tcl</code> in the terminal or the VMD TkConsole. The VMD visualisation is shown below:</p>
+
+<p><img src="images/assembly_nanoparticles/vmd_rod.png" alt="github page" height="300" /></p>
+
+<h5 id="toc_2">Github Page / Gitee Page / Subscription</h5>
+
+<p><img src="images/github_yawei.png" alt="github page" width="80" height="80" />
+<img src="images/gitee_yawei.png" alt="gitee page" width="80" height="80" />
+<img src="images/wechat.png" alt="wechat" width="80" height="80" /></p>
+
+<p>&copy; 2021 Yawei Liu. All content licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode#languages">Creative Commons Attribution-NonCommercial License 4.0 International (CC BY-NC 4.0)</a>.</p>
+
+<h2 id="toc_3"></h2>
+
+<h4 id="toc_4"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
 
 
