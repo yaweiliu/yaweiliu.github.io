@@ -16,7 +16,7 @@
 
 ##### 32. J Wei<span>^*</span>, <span style="color:#2da266">Y Liu^*</span>, F song. *Coarse-grained simulation of the translational and rotational diffusion of globular proteins by dissipative particle dynamics.* <span style="color:#00bfff">J. Chem. Phys.</span> 153, 234902 (2020). <span style="color:#deb38a">[*corresponding author]</span> ^[Link](http://aip.scitation.org/doi/10.1063/5.0025620) 
 
-##### 31. H Zhang, <span style="color:#2da266">Y Liu</span>, M F S Shahidan, C Kinnear, F Maasoumi, J Cadusch, E M Akinoglu, T D James, A Widmer-Cooper, A Roberts, P Mulvaney. *Direct assembly of vertically oriented, gold nanorod arrays.* <span style="color:#ff931e">Adv. Funct. Mater.</span> 2006753 (2020). ^[Link](https://onlinelibrary.wiley.com/doi/10.1002/adfm.202006753)
+##### 31. H Zhang, <span style="color:#2da266">Y Liu</span>, M F S Shahidan, C Kinnear, F Maasoumi, J Cadusch, E M Akinoglu, T D James, A Widmer-Cooper, A Roberts, P Mulvaney. *Direct assembly of vertically oriented, gold nanorod arrays.* <span style="color:#ff931e">Adv. Funct. Mater.</span> 31, 2006753 (2020). ^[Link](https://onlinelibrary.wiley.com/doi/10.1002/adfm.202006753)
 
 ##### 30. A Sharma, J P Wojciechowski, <span style="color:#2da266">Y Liu</span>, T Pelras, C M Wallace, M Müllner, A Widmer-Cooper, P Thordarson, G Lakhwani. *The role of fiber agglomeration in formation of perylene-based fiber networks.* <span style="color:#00bfff">Cell Rep. Phys. Sci.</span> 1, 100148 (2020). ^[Link](https://linkinghub.elsevier.com/retrieve/pii/S2666386420301521)   
 
