@@ -2,9 +2,9 @@
 # Publications List
 --
 
-#### *Most of them can be downloaded from [Researchgate](https://www.researchgate.net/profile/Yawei_Liu3/research)*
+#### *Preprint version can be downloaded in [Researchgate](https://www.researchgate.net/profile/Yawei_Liu3/research)*
 
-#### *See their citations in [Google Scholar](https://scholar.google.com.au/citations?user=Bh8mdUcAAAAJ&hl=en)*
+#### *See their citations in [Google Scholar](https://scholar.google.com.au/citations?user=Bh8mdUcAAAAJ&hl=en) and [Publons](https://publons.com/researcher/2029215/yawei-liu/)*
 
 ### **<span style="color:#2da266">2021</span>**
 
