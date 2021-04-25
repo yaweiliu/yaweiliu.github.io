@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Dr Yawei Liu - Research notes contents</title>
+<title>202104025_Dynamics simulations of self-assembly of nanoparticles (Tutorial IV_Creatubg LAMMPS data file)</title>
 
 
 <style type="text/css">
@@ -331,42 +331,92 @@ kbd {
 
 <body>
 
-<h4 id="toc_0"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_0"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
-<h1 id="toc_1">Contents</h1>
+<h2 id="toc_1">Dynamics simulations of self-assembly of nanoparticles (Tutorial IV: Creating LAMMPS data file)</h2>
 
-<h2 id="toc_2"></h2>
+<p><em>by Yawei Liu  @ Sydney, Australia 2021/04/25</em></p>
 
+<p>In this tutorial, I am going to show how to build an initial configuration with the model for rod-shaped nanoparticle of \(L=5\), \(D=1\) and \(N=11\), i.e. <code>body = Rod(L=5,D=1,N=11)</code> as shown below:</p>
 
-<!--CONTENTS-->
-<h4 id="toc_3">12. 2021/04/25 Dynamics simulations of self-assembly of nanoparticles (Tutorial IV: Creatubg LAMMPS data file)
-  <a href="notes/202104025_Dynamics simulations of self-assembly of nanoparticles (Tutorial IV_Creatubg LAMMPS data file).html">more...</a></h4>
-<h4 id="toc_3">11. 2021/04/18 Dynamics simulations of self-assembly of nanoparticles (Tutorial III: Visulizing model)
-  <a href="notes/202104018_Dynamics simulations of self-assembly of nanoparticles (Tutorial III_Visulizing model).html">more...</a></h4>
-<h4 id="toc_3">10. 2021/04/11 Dynamics simulations of self-assembly of nanoparticles (Tutorial II: Building model)
-  <a href="notes/202104011_Dynamics simulations of self-assembly of nanoparticles (Tutorial II_Building model).html">more...</a></h4>
-<h4 id="toc_3">9. 2021/04/05 Dynamics simulations of self-assembly of nanoparticles (Tutorial I: Preparation)
-  <a href="notes/20210405_Dynamics simulations of self-assembly of nanoparticles (Tutorial I_Preparation).html">more...</a></h4>
-<h4 id="toc_3">8. 2021/03/28 Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS
-  <a href="notes/20210328_Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS.html">more...</a></h4>
-<h4 id="toc_3">7. 2021/03/21 Analysing simulation trajectory to obtain the rotational diffusion coefficient
-  <a href="notes/20210321_Analysing simulation trajectory to obtain the rotational diffusion coefficient.html">more...</a></h4>
-<h4 id="toc_3">6. 2021/03/15 JCP selected our recent paper as an Editor's Pick
-  <a href="notes/20210315_JCP selected our recent paper as an Editor's Pick.html">more...</a></h4>
-<h4 id="toc_3">5. 2021/03/08 A mechanical approach to control pressure in LAMMPS simulations
-  <a href="notes/20210308_A mechanical approach to control pressure in LAMMPS simulations.html">more...</a></h4>
-<h4 id="toc_3">4. 2021/03/01 Creating an icosphere with Python
-  <a href="notes/20210301_Creating an icosphere with Python.html">more...</a></h4>
-<h4 id="toc_3">3. 2021/02/22 From disordered to ordered: An example of self-assembly of nanorods
-  <a href="notes/20210222_From disordered to ordered- An example of self-assembly of nanorods.html">more...</a></h4>
-<h4 id="toc_3">2. 2021/02/17 Units conversion in dissipative particle dynamics (DPD)
-  <a href="notes/20210217_Units conversion in dissipative particle dynamics (DPD).html">more...</a></h4>
-<h4 id="toc_3">1. 2021/02/14 A new place to see our reseaches
-  <a href="notes/20210214_A new place to see our reseaches.html">more...</a></h4>
+<p><img src="images/assembly_nanoparticles/rod_L05.png" alt="github page" height="300" /></p>
 
-<h2 id="toc_4"></h2>
+<p>The initial configuration is a group of rod with their centre-of-mass arranged in a regular lattice (i.e. a set of points in space, determined by a unit cell with basis atoms, that is replicated infinitely in all dimensions). The lattice I am going to use is hexagonal in the \(x-y\) plane and is replicated in the \(z\)-direction. All rods are aligned in \(z\)-direction in the initial configuration.</p>
 
-<h4 id="toc_5"><a href="../index.html">HOME</a></h4>
+<p>Here is Python code used to create the lattice according to the size of rod:</p>
+
+<div><pre><code class="language-none">def _lattices(body,nx,ny,nz):
+    scale = 1.1 #adjust the distance between bodys
+    #lattice edges
+    ax = (body.L+body.D)*scale
+    ay = body.D*np.sqrt(3)*scale
+    az = body.D*scale
+    
+    lattices = [(ax * i, ay * j, az * k) for i in range(nx) for j in range(ny) for k in range(nz)] \
+            + [(ax * i, ay * j + ay / 2.0, az * k + az / 2.0) for i in range(nx) for j in range(ny) for k in range(nz)]
+    lattices = np.array(lattices)
+    lattices = lattices - np.sum(lattices, axis=0) / len(lattices)
+    boxL = np.array([ax*nx,ay*ny,az*nz])
+    return boxL,lattices</code></pre></div>
+
+<p>Here, \(nx\), \(ny\) and \(nz\) control the number of unit cells in the lattice. Using <code>boxL,lattices = _lattices(body,nx=3,ny=10,nz=18)</code>, a lattice for \(2 nx \cdot ny \cdot nz=1080\) rods is obtained. Putting the rods in the lattice, the initial configuration is</p>
+
+<p><img src="images/assembly_nanoparticles/lattice_xy.png" alt="github page" height="300" />
+<img src="images/assembly_nanoparticles/lattice_z.png" alt="github page" height="300" /></p>
+
+<p>A data file of LAMMPS for this initial configuration can be created using Python code as follow:</p>
+
+<div><pre><code class="language-none">def _write_lammps_data_file(body,boxL,lattices):
+    atom_number = len(lattices)*body.N
+    xlo = -boxL[0]/2; xhi = -xlo
+    ylo = -boxL[1]/2; yhi = -ylo
+    zlo = -boxL[2]/2; zhi = -zlo
+    with open(&#39;init.dat&#39;,&#39;w&#39;) as f:
+        f.write(&quot;rods in AAA configuration\n&quot;)
+        f.write(&quot;\n&quot;)
+        f.write(&quot;%d atoms\n&quot; %atom_number)
+        f.write(&quot;%d bonds\n&quot; %0)
+        f.write(&quot;\n&quot;)
+        f.write(&quot;3 atom types\n&quot;)
+        f.write(&quot;%d bond types\n&quot; %0)
+        f.write(&quot;\n&quot;)
+        f.write(&quot;%f %f xlo xhi\n&quot; %(xlo,xhi))
+        f.write(&quot;%f %f ylo yhi\n&quot; %(ylo,yhi))
+        f.write(&quot;%f %f zlo zhi\n&quot; %(zlo,zhi))
+        f.write(&quot;\n&quot;)
+    
+        f.write(&quot;Atoms\n&quot;)
+        f.write(&quot;\n&quot;)
+        atomid = 0; molid = 0
+        for lattice in lattices:
+            molid += 1
+            for i,atom in enumerate(body.atoms):
+                atomid += 1
+                ix = lattice[0]+atom[0]-body.cm[0]
+                iy = lattice[1]+atom[1]-body.cm[1]
+                iz = lattice[2]+atom[2]-body.cm[2]
+                itype = body.atom_types[i]
+                if itype==1:
+                    f.write(&quot;%5d %2d %12.6f %12.6f %12.6f %2d 0 1 0 0\n&quot; %(atomid,itype,ix,iy,iz,molid))
+                elif itype==2:
+                    f.write(&quot;%5d %2d %12.6f %12.6f %12.6f %2d 0 0 1 0\n&quot; %(atomid,itype,ix,iy,iz,molid))
+                else:
+                    f.write(&quot;%5d %2d %12.6f %12.6f %12.6f %2d 0 0 0 0\n&quot; %(atomid,itype,ix,iy,iz,molid))
+        f.write(&quot;\n&quot;)</code></pre></div>
+
+<p>Note that in the following simulations, I am going to use <code>atom_style hybrid bond dipole</code>, thus in the data file, each atom has an attribute list: <a href="https://lammps.sandia.gov/doc/read_data.html"><code>id type ix iy iz mol q mux muy muz</code></a>.</p>
+
+<h5 id="toc_2">Github Page / Gitee Page / Subscription</h5>
+
+<p><img src="images/github_yawei.png" alt="github page" width="80" height="80" />
+<img src="images/gitee_yawei.png" alt="gitee page" width="80" height="80" />
+<img src="images/wechat.png" alt="wechat" width="80" height="80" /></p>
+
+<p>&copy; 2021 Yawei Liu. All content licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode#languages">Creative Commons Attribution-NonCommercial License 4.0 International (CC BY-NC 4.0)</a>.</p>
+
+<h2 id="toc_3"></h2>
+
+<h4 id="toc_4"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
 
 
