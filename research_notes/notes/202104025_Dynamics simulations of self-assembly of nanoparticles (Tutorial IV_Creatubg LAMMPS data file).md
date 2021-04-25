@@ -8,7 +8,7 @@ In this tutorial, I am going to show how to build an initial configuration with 
 
 <img src="images/assembly_nanoparticles/rod_L05.png" alt="github page" height="300" />
 
-The initial configuration is a group of rod with their centre-of-mass arranged in a regular lattice (i.e. a set of points in space, determined by a unit cell with basis atoms, that is replicated infinitely in all dimensions). The lattice I am going to use is hexagonal in the $x-y$ plane and is replicated in the $z$-direction. All rods are aligned in $z$-direction in the initial configuration.
+The initial configuration is a group of rod with their centre-of-mass arranged in a regular lattice (i.e. a set of points in space, determined by a unit cell with basis atoms, that is replicated infinitely in all dimensions). The lattice I am going to use is hexagonal in the $y-z$ plane and is replicated in the $x$-direction. All rods are aligned in $x$-direction in the initial configuration.
 
 Here is Python code used to create the lattice according to the size of rod:
 
