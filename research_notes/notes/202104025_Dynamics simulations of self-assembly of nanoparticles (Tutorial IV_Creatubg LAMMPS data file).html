@@ -404,7 +404,7 @@ kbd {
                     f.write(&quot;%5d %2d %12.6f %12.6f %12.6f %2d 0 0 0 0\n&quot; %(atomid,itype,ix,iy,iz,molid))
         f.write(&quot;\n&quot;)</code></pre></div>
 
-<p>Note that in the following simulations, I am going to use <code>atom_style hybrid bond dipole</code>, thus in the data file, each atom has an attribute list: <a href="https://lammps.sandia.gov/doc/read_data.html"><code>id type ix iy iz mol q mux muy muz</code></a>.</p>
+<p>Using <code>_write_lammps_data_file(body,boxL,lattices)</code> can create a data file named <code>init.dat</code>. Note that in the following simulations, I am going to use <code>atom_style hybrid bond dipole</code>, thus in the data file, each atom has an attribute list: <a href="https://lammps.sandia.gov/doc/read_data.html"><code>id type ix iy iz mol q mux muy muz</code></a>.</p>
 
 <h5 id="toc_2">Github Page / Gitee Page / Subscription</h5>
 

@@ -73,7 +73,7 @@ def _write_lammps_data_file(body,boxL,lattices):
                     f.write("%5d %2d %12.6f %12.6f %12.6f %2d 0 0 0 0\n" %(atomid,itype,ix,iy,iz,molid))
         f.write("\n")
 ```
-Note that in the following simulations, I am going to use ```atom_style hybrid bond dipole```, thus in the data file, each atom has an attribute list: [```id type ix iy iz mol q mux muy muz```](https://lammps.sandia.gov/doc/read_data.html).
+Using ```_write_lammps_data_file(body,boxL,lattices)``` can create a data file named ```init.dat```. Note that in the following simulations, I am going to use ```atom_style hybrid bond dipole```, thus in the data file, each atom has an attribute list: [```id type ix iy iz mol q mux muy muz```](https://lammps.sandia.gov/doc/read_data.html).
 
 
 ##### Github Page / Gitee Page / Subscription
