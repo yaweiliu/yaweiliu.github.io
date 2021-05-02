@@ -379,7 +379,7 @@ group origin type 1
 group solid type 1 2 3
 group output type 1
 
-variable commcutoff equal ${rodL}/2.
+variable commcutoff equal ${rodL}/2.+0.1
 comm_modify mode single cutoff ${commcutoff}
 neigh_modify exclude molecule/intra solid
 
