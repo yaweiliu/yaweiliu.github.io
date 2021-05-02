@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Dr Yawei Liu - Research notes contents</title>
+<title>20210502_Dynamics simulations of self-assembly of nanoparticles (Tutorial V_Creating LAMMPS script)</title>
 
 
 <style type="text/css">
@@ -331,44 +331,109 @@ kbd {
 
 <body>
 
-<h4 id="toc_0"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_0"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
-<h1 id="toc_1">Contents</h1>
+<h2 id="toc_1">Dynamics simulations of self-assembly of nanoparticles (Tutorial V: Creating LAMMPS script)</h2>
 
-<h2 id="toc_2"></h2>
+<p><em>by Yawei Liu  @ Sydney, Australia 2021/05/02</em></p>
 
+<p>In this tutorial, I am going to show a LAMMPS script to run a compression Langevin simulation for a group of rod-shaped nanoparticles.</p>
 
-<!--CONTENTS-->
-<h4 id="toc_3">12. 2021/05/02 Dynamics simulations of self-assembly of nanoparticles (Tutorial V: Creating LAMMPS script)
-  <a href="notes/20210502_Dynamics simulations of self-assembly of nanoparticles (Tutorial V_Creating LAMMPS script).html">more...</a></h4>
-<h4 id="toc_3">12. 2021/04/25 Dynamics simulations of self-assembly of nanoparticles (Tutorial IV: Creating LAMMPS data file)
-  <a href="notes/202104025_Dynamics simulations of self-assembly of nanoparticles (Tutorial IV_Creating LAMMPS data file).html">more...</a></h4>
-<h4 id="toc_3">11. 2021/04/18 Dynamics simulations of self-assembly of nanoparticles (Tutorial III: Visulizing model)
-  <a href="notes/202104018_Dynamics simulations of self-assembly of nanoparticles (Tutorial III_Visulizing model).html">more...</a></h4>
-<h4 id="toc_3">10. 2021/04/11 Dynamics simulations of self-assembly of nanoparticles (Tutorial II: Building model)
-  <a href="notes/202104011_Dynamics simulations of self-assembly of nanoparticles (Tutorial II_Building model).html">more...</a></h4>
-<h4 id="toc_3">9. 2021/04/05 Dynamics simulations of self-assembly of nanoparticles (Tutorial I: Preparation)
-  <a href="notes/20210405_Dynamics simulations of self-assembly of nanoparticles (Tutorial I_Preparation).html">more...</a></h4>
-<h4 id="toc_3">8. 2021/03/28 Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS
-  <a href="notes/20210328_Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS.html">more...</a></h4>
-<h4 id="toc_3">7. 2021/03/21 Analysing simulation trajectory to obtain the rotational diffusion coefficient
-  <a href="notes/20210321_Analysing simulation trajectory to obtain the rotational diffusion coefficient.html">more...</a></h4>
-<h4 id="toc_3">6. 2021/03/15 JCP selected our recent paper as an Editor's Pick
-  <a href="notes/20210315_JCP selected our recent paper as an Editor's Pick.html">more...</a></h4>
-<h4 id="toc_3">5. 2021/03/08 A mechanical approach to control pressure in LAMMPS simulations
-  <a href="notes/20210308_A mechanical approach to control pressure in LAMMPS simulations.html">more...</a></h4>
-<h4 id="toc_3">4. 2021/03/01 Creating an icosphere with Python
-  <a href="notes/20210301_Creating an icosphere with Python.html">more...</a></h4>
-<h4 id="toc_3">3. 2021/02/22 From disordered to ordered: An example of self-assembly of nanorods
-  <a href="notes/20210222_From disordered to ordered- An example of self-assembly of nanorods.html">more...</a></h4>
-<h4 id="toc_3">2. 2021/02/17 Units conversion in dissipative particle dynamics (DPD)
-  <a href="notes/20210217_Units conversion in dissipative particle dynamics (DPD).html">more...</a></h4>
-<h4 id="toc_3">1. 2021/02/14 A new place to see our reseaches
-  <a href="notes/20210214_A new place to see our reseaches.html">more...</a></h4>
+<p>In our model, rod spheres interact with other spheres via a continuous pseudo-hard-core potential, in the form of \(U=50(50/49)^{49} \epsilon [(\sigma/r)^{50} -(\sigma/r)^{49}]\) truncated and shifted at \(r^{\alpha\beta}_{cut}=(50/49)\sigma\). Here, \(r\) is the center-to-center distance between the spheres, \(\epsilon\) is the energy parameter, \(\sigma\) is the distance parameter [1]. During the Langevin simulations, all spheres are subjected to three forces: a conservative force \(F^C\) computed via the pairwise interactions described above; a friction force \(F^F=-(m/\gamma)v\) with \(m\) the sphere mass, \(\gamma\) the damping factor, and \(v\) the sphere velocity; and a random force \(F^R\propto\sqrt{k_BT m/(\Delta t\gamma)}\) with \(k_B\) the Boltzmann constant, \(T\) the desired temperature, and \(\Delta t\) the time step. Here, we set the mass of each rod sphere to be the same, i.e. \(m_p=m\). All simulations are carried out at a dimensionless temperature \(k_BT/\epsilon=1\). The velocity-Verlet algorithm was used to integrate the equations of motion with a time step \(\Delta t=0.005\tau\) where \(\tau=D\sqrt{m/(k_BT)}\). A Berendsen barostat with a time constant of \(5\tau\) was applied to control the pressure.</p>
+
+<p>Here is the LAMMPS script:</p>
+
+<div><pre><code class="language-none">variable    rodL     equal 5.0
+variable    mypress  equal 1.0
+variable    myPstart equal 1.0
+variable    myPend   equal 3.0
+variable    mytemp   equal 1.0
+variable    myrand   equal 4003
+
+#####0 relax  1 compress
+variable    restart_flag equal 0 
+
+units       lj
+dimension   3
+boundary    p p p
+atom_style  hybrid bond dipole
+
+if &quot;${restart_flag} &gt; 0&quot; then &amp;
+    &quot;read_data restart.dat&quot; &amp;
+    &quot;jump input_eq.lmp main&quot;
+
+read_data  init.dat
+mass       * 1
+velocity   all create ${mytemp} ${myrand} rot yes dist gaussian
+##########################################################
+label      main
+
+###potential
+pair_style mie/cut 1.02040816327
+pair_modify shift yes
+pair_coeff   *   *  1.0 1.0 50 49 
+
+timestep 0.005
+
+group origin type 1
+group solid type 1 2 3
+group output type 1
+
+variable commcutoff equal ${rodL}/2.
+comm_modify mode single cutoff ${commcutoff}
+neigh_modify exclude molecule/intra solid
+
+fix rigid solid rigid/small molecule
+if &quot;${restart_flag} ==0 &quot; then &amp;
+   &quot;fix press all press/berendsen iso ${mypress} ${mypress} 5.0&quot;
+if &quot;${restart_flag} &gt;0 &quot; then &amp;
+   &quot;fix press all press/berendsen aniso ${myPstart} ${myPend} 5.0&quot;
+fix langevin all langevin 1.0 1.0 1 ${myrand} zero yes
+
+variable step equal step
+variable time equal time
+variable lx equal lx
+variable ly equal ly
+variable lz equal lz
+variable Nc equal count(origin)
+
+variable temp equal temp
+variable pxx equal pxx
+variable pyy equal pyy
+variable pzz equal pzz
+
+thermo_style custom step atoms temp press pxx lx ly lz v_Nc
+thermo_modify flush yes
+thermo 1000
+
+fix log all print 1000 &quot;${step} ${time} ${temp} ${pxx} ${pyy} ${pzz} ${lx} ${ly} ${lz} ${Nc}&quot; title &quot;step time temp pxx pyy pzz lx ly lz Nr&quot; file result_thermo.log screen no
+
+dump atom output custom 5000 result_atoms.log id mol type x y z mux muy muz
+dump_modify atom sort id
+
+run 1000000
+write_data  restart.dat.* nofix nocoeff
+</code></pre></div>
+
+<p>When <code>restart_flag==0</code>, LAMMPS will read the initial configuration file <code>init.dat</code> and equilibrate the system at a low pressure (thus an isotropic phase will be otbained). The final configuration will be saved as <code>restart.dat</code>.</p>
+
+<p>When <code>restart_flag==1</code>, LAMMPS will read the file <code>restart.dat</code> and compress the system from a low pressure to a high pressure, and we will observe the isotropic-nematic-smectic-crystal phase transitions as the pressure increasing.</p>
+
+<h3 id="toc_2">References</h3>
+
+<p>[1] <a href="https://aip.scitation.org/doi/10.1063/5.0041285">Liu, Y.; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. J. Chem. Phys. 2021, 154 (10), 104120.</a></p>
+
+<h5 id="toc_3">Github Page / Gitee Page / Subscription</h5>
+
+<p><img src="images/github_yawei.png" alt="github page" width="80" height="80" />
+<img src="images/gitee_yawei.png" alt="gitee page" width="80" height="80" />
+<img src="images/wechat.png" alt="wechat" width="80" height="80" /></p>
+
+<p>&copy; 2021 Yawei Liu. All content licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode#languages">Creative Commons Attribution-NonCommercial License 4.0 International (CC BY-NC 4.0)</a>.</p>
 
 <h2 id="toc_4"></h2>
 
-<h4 id="toc_5"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_5"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
 
 
