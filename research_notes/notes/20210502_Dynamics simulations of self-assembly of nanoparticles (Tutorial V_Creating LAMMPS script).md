@@ -86,7 +86,7 @@ write_data  restart.dat.* nofix nocoeff
 
 When ```restart_flag==0```, LAMMPS will read the initial configuration file ```init.dat``` and equilibrate the system at a low pressure (thus an isotropic phase will be otbained). The final configuration will be saved as ```restart.dat```.
 
-When ```restart_flag==1```, LAMMPS will read the file ```restart.dat``` and compress the system from a low pressure to a high pressure, and we will observe the isotropic-nematic-smectic-crystal phase transitions as the pressure increasing.
+When ```restart_flag==1```, LAMMPS will read the file ```restart.dat``` and compress the system from a low pressure to a high pressure, and we will observe the isotropic-nematic-smectic-crystal phase transitions as the pressure increases.
 
 ### References
 
