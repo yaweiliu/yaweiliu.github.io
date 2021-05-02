@@ -6,7 +6,7 @@
 
 In this tutorial, I am going to show a LAMMPS script to run a compression Langevin simulation for a group of rod-shaped nanoparticles.
 
-In our model, rod spheres interact with other spheres via a continuous pseudo-hard-core potential, in the form of $U=50(50/49)^{49} \epsilon [(\sigma/r)^{50} -(\sigma/r)^{49}]$ truncated and shifted at $r^{\alpha\beta}_{cut}=(50/49)\sigma$. Here, $r$ is the center-to-center distance between the spheres, $\epsilon$ is the energy parameter, $\sigma$ is the distance parameter [1]. During the Langevin simulations, all spheres are subjected to three forces: a conservative force $F^C$ computed via the pairwise interactions described above; a friction force $F^F=-(m/\gamma)v$ with $m$ the sphere mass, $\gamma$ the damping factor, and $v$ the sphere velocity; and a random force $F^R\propto\sqrt{k_BT m/(\Delta t\gamma)}$ with $k_B$ the Boltzmann constant, $T$ the desired temperature, and $\Delta t$ the time step. Here, we set the mass of each rod sphere to be the same, i.e. $m_p=m$. All simulations are carried out at a dimensionless temperature $k_BT/\epsilon=1$. The velocity-Verlet algorithm was used to integrate the equations of motion with a time step $\Delta t=0.005\tau$ where $\tau=D\sqrt{m/(k_BT)}$. A Berendsen barostat with a time constant of $5\tau$ was applied to control the pressure.
+In our model, rod spheres interact with other spheres via a continuous pseudo-hard-core potential, in the form of $U=50(50/49)^{49} \epsilon [(\sigma/r)^{50} -(\sigma/r)^{49}]$ truncated and shifted at $r^{\alpha\beta}_{cut}=(50/49)\sigma$. Here, $r$ is the center-to-center distance between the spheres, $\epsilon$ is the energy parameter, $\sigma$ is the distance parameter [1,2]. During the Langevin simulations, all spheres are subjected to three forces: a conservative force $F^C$ computed via the pairwise interactions described above; a friction force $F^F=-(m/\gamma)v$ with $m$ the sphere mass, $\gamma$ the damping factor, and $v$ the sphere velocity; and a random force $F^R\propto\sqrt{k_BT m/(\Delta t\gamma)}$ with $k_B$ the Boltzmann constant, $T$ the desired temperature, and $\Delta t$ the time step. Here, we set the mass of each rod sphere to be the same, i.e. $m_p=m$. All simulations are carried out at a dimensionless temperature $k_BT/\epsilon=1$. The velocity-Verlet algorithm was used to integrate the equations of motion with a time step $\Delta t=0.005\tau$ where $\tau=D\sqrt{m/(k_BT)}$. A Berendsen barostat with a time constant of $5\tau$ was applied to control the pressure.
 
 Here is the LAMMPS script:
 
@@ -90,7 +90,9 @@ When ```restart_flag==1```, LAMMPS will read the file ```restart.dat``` and comp
 
 ### References
 
-[1] [Liu, Y.; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. J. Chem. Phys. 2021, 154 (10), 104120.](https://aip.scitation.org/doi/10.1063/5.0041285)
+[1] [Liu, Y.; Widmer-Cooper, A. A Versatile Simulation Method for Studying Phase Behavior and Dynamics in Colloidal Rod and Rod-Polymer Suspensions. J. Chem. Phys. 2019, 150 (24), 244508.](http://aip.scitation.org/doi/10.1063/1.5096193)
+
+[2] [Liu, Y.; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. J. Chem. Phys. 2021, 154 (10), 104120.](https://aip.scitation.org/doi/10.1063/5.0041285)
 
 
 ##### Github Page / Gitee Page / Subscription
