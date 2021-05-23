@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Dr Yawei Liu - Research notes contents</title>
+<title>20210523_Dynamics simulations of self-assembly of nanoparticles (Tutorial VI_Visualising simulation data)</title>
 
 
 <style type="text/css">
@@ -331,46 +331,92 @@ kbd {
 
 <body>
 
-<h4 id="toc_0"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_0"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
-<h1 id="toc_1">Contents</h1>
+<h2 id="toc_1">Dynamics simulations of self-assembly of nanoparticles (Tutorial VI: Visualising simulation data)</h2>
 
-<h2 id="toc_2"></h2>
+<p><em>by Yawei Liu  @ Sydney, Australia 2021/05/23</em></p>
+
+<p>In this week, I ran several simulations as follows: first, a cubic box consisting of \(1080\) rods (\(L/D=5\)) was equilibrated into an isotropic liquid phase at a pressure \(p=1.0\); then, the system was slowly compressed by increasing the pressure to \(p=3.0\) in \(5\times 10^7\) steps; after reaching the final crystal phase at \(p=3.0\), the box was expended back to the low pressure at the same rate. During the simulations, some info of the system were recorded into files named <code>result_thermo.dat</code>, as shown below:</p>
+
+<div><pre><code class="language-none">step       time     temp       pxx        pyy        pzz        lx          ly          lz          Nr
+0          0        1.010264   0.902227   1.202412   0.396579   23.548369   22.659428   23.548369   1080
+1000       5        0.971048   0.796330   1.109226   1.026151   23.547066   22.652173   23.554622   1080
+2000       10       1.006397   1.114031   0.826077   0.874079   23.550692   22.640817   23.540041   1080
+...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...
+49998000   249990   0.968171   2.711777   3.104047   3.133346   18.995607   19.365199   19.823234   1080
+49999000   249995   1.020668   2.770042   2.974512   2.774922   18.999537   19.366164   19.826702   1080
+50000000   250000   0.979795   2.729397   2.316430   3.073195   18.991180   19.372467   19.842262   1080</code></pre></div>
+
+<p>I renamed the two <code>result_thermo.dat</code> files in the compression and expansion simulations as <code>result_thermo_compression.dat</code> and <code>result_thermo_expansion.dat</code>, respectively. This is a Python script to visualise the relation between the pressure and the volume fraction based on the data produced by the simulations:</p>
+
+<div><pre><code class="language-none">Pmin = 1.0
+Pmax = 3.0
+Prate = (Pmax-Pmin)/5e7
+
+fig = plt.figure(figsize=(4,2.2), dpi=300);
+ax = fig.add_subplot(111);
+
+data = pd.read_csv(directory+&quot;/result_thermo_compression.log&quot;,sep=&#39;\s+&#39;)
+x = data[&#39;step&#39;]; x -=x[0]
+x = Pmin+x*Prate
+y = data[&#39;Nr&#39;]*body.volume/data[&#39;lx&#39;]/data[&#39;ly&#39;]/data[&#39;lz&#39;]
+ax.plot(x[::10],y[::10],&#39;-&#39;,lw=1,label=&#39;compression&#39;);
+
+data = pd.read_csv(directory+&quot;/result_thermo_expension.log&quot;,sep=&#39;\s+&#39;)
+x = data[&#39;step&#39;]; x -=x[0]
+x = Pmax-x*Prate
+y = data[&#39;Nr&#39;]*body.volume/data[&#39;lx&#39;]/data[&#39;ly&#39;]/data[&#39;lz&#39;]
+ax.plot(x[::10],y[::10],&#39;-&#39;,lw=1,label=&#39;expension&#39;);
+
+xy = (1,0.418)
+width = 2;height=0.02
+block = plt.Rectangle(xy,width,height,facecolor=&#39;tab:red&#39;,alpha=0.3,edgecolor=&#39;None&#39;,zorder=0)
+ax.add_artist(block)
+
+xy = (1,0.475)
+width = 2;height=0.037
+block = plt.Rectangle(xy,width,height,facecolor=&#39;tab:blue&#39;,alpha=0.3,edgecolor=&#39;None&#39;,zorder=0)
+ax.add_artist(block)
+
+xy = (1,0.578)
+width = 2;height=0.04
+block = plt.Rectangle(xy,width,height,facecolor=&#39;tab:orange&#39;,alpha=0.3,edgecolor=&#39;None&#39;,zorder=0)
+ax.add_artist(block)
+
+ax.text(2.1,0.38, &#39;I&#39;, fontsize=10)
+ax.text(2.1,0.45, &#39;N&#39;, fontsize=10)
+ax.text(2.1,0.52, &#39;Sm&#39;, fontsize=10)
+ax.text(2.1,0.64, &#39;X&#39;, fontsize=10)
 
 
-<!--CONTENTS-->
-<h4 id="toc_3">14. 2021/05/23 Dynamics simulations of self-assembly of nanoparticles (Tutorial VI: Visualising simulation data)
-  <a href="notes/20210523_Dynamics simulations of self-assembly of nanoparticles (Tutorial VI_Visualising simulation data).html">more...</a></h4>
-<h4 id="toc_3">13. 2021/05/02 Dynamics simulations of self-assembly of nanoparticles (Tutorial V: Creating LAMMPS script)
-  <a href="notes/20210502_Dynamics simulations of self-assembly of nanoparticles (Tutorial V_Creating LAMMPS script).html">more...</a></h4>
-<h4 id="toc_3">12. 2021/04/25 Dynamics simulations of self-assembly of nanoparticles (Tutorial IV: Creating LAMMPS data file)
-  <a href="notes/202104025_Dynamics simulations of self-assembly of nanoparticles (Tutorial IV_Creating LAMMPS data file).html">more...</a></h4>
-<h4 id="toc_3">11. 2021/04/18 Dynamics simulations of self-assembly of nanoparticles (Tutorial III: Visulizing model)
-  <a href="notes/202104018_Dynamics simulations of self-assembly of nanoparticles (Tutorial III_Visulizing model).html">more...</a></h4>
-<h4 id="toc_3">10. 2021/04/11 Dynamics simulations of self-assembly of nanoparticles (Tutorial II: Building model)
-  <a href="notes/202104011_Dynamics simulations of self-assembly of nanoparticles (Tutorial II_Building model).html">more...</a></h4>
-<h4 id="toc_3">9. 2021/04/05 Dynamics simulations of self-assembly of nanoparticles (Tutorial I: Preparation)
-  <a href="notes/20210405_Dynamics simulations of self-assembly of nanoparticles (Tutorial I_Preparation).html">more...</a></h4>
-<h4 id="toc_3">8. 2021/03/28 Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS
-  <a href="notes/20210328_Computing diffusion coefficient and dynamic viscosity of a simple liquid in LAMMPS.html">more...</a></h4>
-<h4 id="toc_3">7. 2021/03/21 Analysing simulation trajectory to obtain the rotational diffusion coefficient
-  <a href="notes/20210321_Analysing simulation trajectory to obtain the rotational diffusion coefficient.html">more...</a></h4>
-<h4 id="toc_3">6. 2021/03/15 JCP selected our recent paper as an Editor's Pick
-  <a href="notes/20210315_JCP selected our recent paper as an Editor's Pick.html">more...</a></h4>
-<h4 id="toc_3">5. 2021/03/08 A mechanical approach to control pressure in LAMMPS simulations
-  <a href="notes/20210308_A mechanical approach to control pressure in LAMMPS simulations.html">more...</a></h4>
-<h4 id="toc_3">4. 2021/03/01 Creating an icosphere with Python
-  <a href="notes/20210301_Creating an icosphere with Python.html">more...</a></h4>
-<h4 id="toc_3">3. 2021/02/22 From disordered to ordered: An example of self-assembly of nanorods
-  <a href="notes/20210222_From disordered to ordered- An example of self-assembly of nanorods.html">more...</a></h4>
-<h4 id="toc_3">2. 2021/02/17 Units conversion in dissipative particle dynamics (DPD)
-  <a href="notes/20210217_Units conversion in dissipative particle dynamics (DPD).html">more...</a></h4>
-<h4 id="toc_3">1. 2021/02/14 A new place to see our reseaches
-  <a href="notes/20210214_A new place to see our reseaches.html">more...</a></h4>
+ax.set_xlabel(&#39;pressure&#39;);
+ax.set_ylabel(&#39;volume fraction&#39;);
+ax.set_xlim(min(x),max(x));
+ax.tick_params(direction=&#39;in&#39;)
+ax.legend(frameon=False)
+
+plt.tight_layout()</code></pre></div>
+
+<p>We can obtain the the equation of state for this system with the volume fraction plotted <em>vs</em> the pressure. Each hysteresis between the compression and expansion branches is a clear indication of the first order transition between Isotropic (I), Nematic (N), Smectic (Sm), and Cystal (X) phases. And the slender coloured boxes delimit the two-phase coexistence regions between these phases.</p>
+
+<p><img src="images/assembly_nanoparticles/equ_state.png" alt=" " height="300" /></p>
+
+<h3 id="toc_2">References</h3>
+
+<p>[1] <a href="https://aip.scitation.org/doi/10.1063/5.0041285">Liu, Y.; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. J. Chem. Phys. 2021, 154 (10), 104120.</a></p>
+
+<h5 id="toc_3">Github Page / Gitee Page / Subscription</h5>
+
+<p><img src="images/github_yawei.png" alt="github page" width="80" height="80" />
+<img src="images/gitee_yawei.png" alt="gitee page" width="80" height="80" />
+<img src="images/wechat.png" alt="wechat" width="80" height="80" /></p>
+
+<p>&copy; 2021 Yawei Liu. All content licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode#languages">Creative Commons Attribution-NonCommercial License 4.0 International (CC BY-NC 4.0)</a>.</p>
 
 <h2 id="toc_4"></h2>
 
-<h4 id="toc_5"><a href="../index.html">HOME</a></h4>
+<h4 id="toc_5"><a href="../../index.html">HOME</a> <a href="../index.html">CONTENTS</a></h4>
 
 
 
