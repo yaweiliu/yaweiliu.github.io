@@ -1,6 +1,6 @@
 #### [HOME](../../index.html) [CONTENTS](../index.html)
 
-## Dynamics simulations of self-assembly of nanoparticles (Tutorial VI: Visualising simulation data)
+## Dynamics simulations of self-assembly of nanoparticles (Tutorial VI: Visualizing simulation data)
  
 *by Yawei Liu  @ Sydney, Australia 2021/05/23*
 
@@ -16,7 +16,7 @@ step       time     temp       pxx        pyy        pzz        lx          ly  
 49999000   249995   1.020668   2.770042   2.974512   2.774922   18.999537   19.366164   19.826702   1080
 50000000   250000   0.979795   2.729397   2.316430   3.073195   18.991180   19.372467   19.842262   1080
 ```
-I renamed the two ```result_thermo.dat``` files in the compression and expansion simulations as ```result_thermo_compression.dat``` and ```result_thermo_expansion.dat```, respectively. This is a Python script to visualise the relation between the pressure and the volume fraction based on the data produced by the simulations:
+I renamed the two ```result_thermo.dat``` files in the compression and expansion simulations as ```result_thermo_compression.dat``` and ```result_thermo_expansion.dat```, respectively. This is a Python script to visualize the relation between the pressure and the volume fraction based on the data produced by the simulations:
 
 ```
 Pmin = 1.0
