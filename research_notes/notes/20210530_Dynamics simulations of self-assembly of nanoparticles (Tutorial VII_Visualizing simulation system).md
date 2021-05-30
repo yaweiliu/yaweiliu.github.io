@@ -231,7 +231,7 @@ def _plato_sphere_frame(snap,zoom=1.0,size=(20, 20)):
 Running ```_plato_sphere_frame(snap,zoom=0.5,size=(30,30)).show()```, we obtain
 <img src="images/assembly_nanoparticles/snapshot_nematic.png" alt=" " height="300" />
 
-Obviously, it is a nematic phase. This is consistent with the equation of state we plotted last week: at volume fraction of $\sim0.45$, the system is in nematic phase.
+Obviously, it is a nematic phase. This is consistent with the equation of state we plotted last week: at volume fraction of $\sim0.45$, the system is in nematic phase[1].
 
 
 ### References
