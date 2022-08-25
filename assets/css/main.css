@@ -3685,7 +3685,7 @@ input, select, textarea {
 		.wrapper .inner {
 			padding: 3em 0 1em 0 ;
 			margin: 0 auto;
-			width: 55em;
+			width: 65em;
 		}
 
 		.wrapper.style2 {
@@ -3802,7 +3802,7 @@ input, select, textarea {
 			.wrapper.spotlight .image {
 				border-radius: 100%;
 				margin: 0 3em 2em 0;
-				width: 30em;
+				width: 25em;
 				overflow: hidden;
 				-ms-flex: 1;
 			}
