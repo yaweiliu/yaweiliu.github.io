@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>publication_list</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h4 id="toc_0"><a href="./index.html">HOME</a></h4>
+
+<h1 id="toc_1">Publication List</h1>
+
+<h3 id="toc_2"><strong><span style="color:#2da266">2022</span></strong></h3>
+
+<h5 id="toc_3">43. You, X.#; Cao, L.#; <span style="color:#00bfff">Liu, Y.</span>#; Wu, H.; Li, R.; Xiao, Q.; Yuan, J.; Zhang, R.; Fan, C.; Wang, X.; Yang, P.; Yang, X.; Ma, Y.; Jiang, Z. Charged Nanochannels in Covalent Organic Framework Membranes Enabling Efficient Ion Exclusion. <a href="https://doi.org/10.1021/acsnano.2c04767">ACS Nano 2022, 16 (8), 11781–11791</a>.</h5>
+
+<h5 id="toc_4">42. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X.; Dong, K.; Zhang, S. 离子液体的凝聚态化学研究. <a href="https://doi.org/10.7536/PC220347">化学进展 2022, 34 (7), 1509–1523</a>.</h5>
+
+<h5 id="toc_5">41. Zhang, H.; <span style="color:#00bfff">Liu, Y.</span>; Ashokan, A.; Gao, C.; Dong, Y.; Kinnear, C.; Kirkwood, N.; Zaman, S.; Maasoumi, F.; James, T. D.; Widmer‐Cooper, A.; Roberts, A.; Mulvaney, P. A General Method for Direct Assembly of Single Nanocrystals. <a href="https://doi.org/10.1002/adom.202200179">Adv. Opt. Mater. 2022, 10 (14), 2200179</a>.</h5>
+
+<h5 id="toc_6">40. Zhang, J.; Li, X.; <span style="color:#00bfff">Liu, Y.</span>; Feng, J.; Zhao, J.; Geng, Y.; Gao, H.; Wang, T.; Yang, W.; Jiang, L.; Wu, Y. Confined Assembly of Colloidal Nanorod Superstructures by Locally Controlling Free‐Volume Entropy in Nonequilibrium Fluids. <a href="https://doi.org/10.1002/adma.202202119">Adv. Mater. 2022, 34 (28), 2202119</a>.</h5>
+
+<h5 id="toc_7">39. Bo, A.; <span style="color:#00bfff">Liu, Y.</span>; Kuttich, B.; Kraus, T.; Widmer‐Cooper, A.; de Jonge, N. Nanoscale Faceting and Ligand Shell Structure Dominate the Self‐Assembly of Nonpolar Nanoparticles into Superlattices. <a href="https://doi.org/10.1002/adma.202109093">Adv. Mater. 2022, 34 (20), 2109093</a>.</h5>
+
+<h5 id="toc_8">38. Wang, M.; Zhang, P.; Liang, X.; Zhao, J.; <span style="color:#00bfff">Liu, Y.</span>; Cao, Y.; Wang, H.; Chen, Y.; Zhang, Z.; Pan, F.; Zhang, Z.; Jiang, Z. Ultrafast Seawater Desalination with Covalent Organic Framework Membranes. <a href="https://doi.org/10.1038/s41893-022-00870-3">Nat. Sustain. 2022, 5 (6), 518–526</a>.</h5>
+
+<h5 id="toc_9">37. Fan, C.; Cao, L.; Yang, C.; Xiao, Q.; You, X.; Wang, X.; Kong, Y.; Wu, H.*; <span style="color:#00bfff">Liu, Y.</span>*; Jiang, Z.* Charged Nanochannels Endow COF Membrane with Weakly Concentration-Dependent Methanol Permeability. <a href="https://doi.org/10.1016/j.memsci.2021.120186">J. Memb. Sci. 2022, 645, 120186</a>.</h5>
+
+<h5 id="toc_10">36. <span style="color:#00bfff">Liu, Y.</span>; Wei, J.; Frenkel, D.; Widmer-Cooper, A. Modelling Aggregates of Cetyltrimethylammonium Bromide on Gold Surfaces Using Dissipative Particle Dynamics Simulations. <a href="https://doi.org/10.1080/08927022.2021.1948546">Mol. Simul. 2022, 48 (10), 872–881</a>.</h5>
+
+<h3 id="toc_11"><strong><span style="color:#2da266">2021</span></strong></h3>
+
+<h5 id="toc_12">35. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. <a href="https://doi.org/10.1063/5.0041285">J. Chem. Phys. 2021, 154 (10), 104120</a>.</h5>
+
+<h5 id="toc_13">34. Wood, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. Crystal Nucleation in Colloidal Rod Suspensions: The Effect of Depletant Size. <a href="https://doi.org/10.1063/5.0052623">J. Chem. Phys. 2021, 154 (24), 244505</a>.</h5>
+
+<h5 id="toc_14">33. Zhang, H.; <span style="color:#00bfff">Liu, Y.</span>; Shahidan, M. F. S.; Kinnear, C.; Maasoumi, F.; Cadusch, J.; Akinoglu, E. M.; James, T. D.; Widmer‐Cooper, A.; Roberts, A.; Mulvaney, P. Direct Assembly of Vertically Oriented, Gold Nanorod Arrays. <a href="https://doi.org/10.1002/adfm.202006753">Adv. Funct. Mater. 2021, 31 (6), 2006753</a>.</h5>
+
+<h3 id="toc_15"><strong><span style="color:#2da266">2020</span></strong></h3>
+
+<h5 id="toc_16">32. Wei, J.*; <span style="color:#00bfff">Liu, Y.</span>*; Song, F. Coarse-Grained Simulation of the Translational and Rotational Diffusion of Globular Proteins by Dissipative Particle Dynamics. <a href="https://doi.org/10.1063/5.0025620">J. Chem. Phys. 2020, 153 (23), 234902</a>.</h5>
+
+<h5 id="toc_17">31. Sharma, A.; Wojciechowski, J. P.; <span style="color:#00bfff">Liu, Y.</span>; Pelras, T.; Wallace, C. M.; Müllner, M.; Widmer-Cooper, A.; Thordarson, P.; Lakhwani, G. The Role of Fiber Agglomeration in Formation of Perylene-Based Fiber Networks. <a href="https://doi.org/10.1016/j.xcrp.2020.100148">Cell Reports Phys. Sci. 2020, 1 (8), 100148</a>.</h5>
+
+<h5 id="toc_18">30. <span style="color:#00bfff">Liu, Y.</span>; Bernardi, S.; Widmer-Cooper, A. Stability of Pinned Surface Nanobubbles against Expansion: Insights from Theory and Simulation. <a href="https://doi.org/10.1063/5.0013223">J. Chem. Phys. 2020, 153 (2), 024704</a>.</h5>
+
+<h3 id="toc_19"><strong><span style="color:#2da266">2019</span></strong></h3>
+
+<h5 id="toc_20">29. Lloyd, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Ng, S. H.; Thai, T.; Gómez, D. E.; Widmer-Cooper, A.; Bach, U. Self-Assembly of Spherical and Rod-Shaped Nanoparticles with Full Positional Control. <a href="https://doi.org/10.1039/C9NR06679A">Nanoscale 2019, 11 (47), 22841–22848</a>.</h5>
+
+<h5 id="toc_21">28. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Versatile Simulation Method for Studying Phase Behavior and Dynamics in Colloidal Rod and Rod-Polymer Suspensions. <a href="https://doi.org/10.1063/1.5096193">J. Chem. Phys. 2019, 150 (24), 244508</a>.</h5>
+
+<h3 id="toc_22"><strong><span style="color:#2da266">2018</span></strong></h3>
+
+<h5 id="toc_23">27. <span style="color:#00bfff">Liu, Y.</span>; Ganti, R.; Frenkel, D. Pressure Gradients Fail to Predict Diffusio-Osmosis. <a href="https://doi.org/10.1088/1361-648X/aabd58">J. Phys. Condens. Matter 2018, 30 (20), 205002</a>.</h5>
+
+<h5 id="toc_24">26. Zou, J.; Zhang, H.; Guo, Z.; <span style="color:#00bfff">Liu, Y.</span>; Wei, J.; Huang, Y.; Zhang, X. Surface Nanobubbles Nucleate Liquid Boiling. <a href="https://doi.org/10.1021/acs.langmuir.8b03290">Langmuir 2018, 34 (46), 14096–14101</a>.</h5>
+
+<h5 id="toc_25">25. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. A Review of Recent Theoretical and Computational Studies on Pinned Surface Nanobubbles. <a href="https://doi.org/10.1088/1674-1056/27/1/014401">Chinese Phys. B 2018, 27 (1), 014401</a>.</h5>
+
+<h5 id="toc_26">24. Ganti, R.; <span style="color:#00bfff">Liu, Y.</span>; Frenkel, D. Hamiltonian Transformation to Compute Thermo-Osmotic Forces. <a href="https://doi.org/10.1103/PhysRevLett.121.068002">Phys. Rev. Lett. 2018, 121 (6), 068002</a>.</h5>
+
+<h5 id="toc_27">23. Zhang, H.; Chen, S.; Guo, Z.; <span style="color:#00bfff">Liu, Y.</span>; Bresme, F.; Zhang, X. Contact Line Pinning Effects Influence Determination of the Line Tension of Droplets Adsorbed on Substrates. <a href="https://doi.org/10.1021/acs.jpcc.8b03588">J. Phys. Chem. C 2018, 122 (30), 17184–17189</a>.</h5>
+
+<h3 id="toc_28"><strong><span style="color:#2da266">2017</span></strong></h3>
+
+<h5 id="toc_29">22. Ganti, R.; <span style="color:#00bfff">Liu, Y.</span>; Frenkel, D. Molecular Simulation of Thermo-Osmotic Slip. Phys. <a href="https://doi.org/10.1103/PhysRevLett.119.038002">Rev. Lett. 2017, 119 (3), 038002</a>.</h5>
+
+<h5 id="toc_30">21. Xiao, Q.; <span style="color:#00bfff">Liu, Y.</span>; Guo, Z.; Liu, Z.; Frenkel, D.; Dobnikar, J.; Zhang, X. What Experiments on Pinned Nanobubbles Can Tell about the Critical Nucleus for Bubble Nucleation. <a href="https://doi.org/10.1140/epje/i2017-11604-7">Eur. Phys. J. E 2017, 40 (12), 114</a>.</h5>
+
+<h5 id="toc_31">20. Xiao, Q.; <span style="color:#00bfff">Liu, Y.</span>; Guo, Z.; Liu, Z.; Lohse, D.; Zhang, X. Solvent Exchange Leading to Nanobubble Nucleation: A Molecular Dynamics Study. <a href="https://doi.org/10.1021/acs.langmuir.7b01231">Langmuir 2017, 33 (32), 8090–8096</a>.</h5>
+
+<h5 id="toc_32">19. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Molecular Dynamics Simulation of Nanobubble Nucleation on Rough Surfaces. <a href="https://doi.org/10.1063/1.4981788">J. Chem. Phys. 2017, 146 (16), 164704</a>.</h5>
+
+<h5 id="toc_33">18. <span style="color:#00bfff">Liu, Y.</span>; Ganti, R.; Burton, H. G. A.; Zhang, X.; Wang, W.; Frenkel, D. Microscopic Marangoni Flows Cannot Be Predicted on the Basis of Pressure Gradients. <a href="https://doi.org/10.1103/PhysRevLett.119.224502">Phys. Rev. Lett. 2017, 119 (22), 224502</a>.</h5>
+
+<h5 id="toc_34">17. Xiao, Q.; <span style="color:#00bfff">Liu, Y.</span>; Guo, Z.; Liu, Z.; Zhang, X. How Nanobubbles Lose Stability: Effects of Surfactants. <a href="https://doi.org/10.1063/1.5000831">Appl. Phys. Lett. 2017, 111 (13), 131601</a>.</h5>
+
+<h3 id="toc_35"><strong><span style="color:#2da266">2016</span></strong></h3>
+
+<h5 id="toc_36">16. Guo, Z.; <span style="color:#00bfff">Liu, Y.</span>; Xiao, Q.; Schönherr, H.; Zhang, X. Modeling the Interaction between AFM Tips and Pinned Surface Nanobubbles. <a href="https://doi.org/10.1021/acs.langmuir.5b04162">Langmuir 2016, 32 (3), 751–758</a>.</h5>
+
+<h5 id="toc_37">15. Li, J.; <span style="color:#00bfff">Liu, Y.</span>*; Jiang, G.; Zhang, X.* Vapour-to-Liquid Nucleation in Cone Pores. <a href="https://doi.org/10.1080/08927022.2014.1001990">Mol. Simul. 2016, 42 (1), 1–8</a>.</h5>
+
+<h5 id="toc_38">14. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Vapor Bridges between Solid Substrates in the Presence of the Contact Line Pinning Effect: Stability and Capillary Force. <a href="https://doi.org/10.1063/1.4971207">J. Chem. Phys. 2016, 145 (21), 214701</a>.</h5>
+
+<h5 id="toc_39">13. Guo, Z.; <span style="color:#00bfff">Liu, Y.</span>; Xiao, Q.; Zhang, X. Hidden Nanobubbles in Undersaturated Liquids. <a href="https://doi.org/10.1021/acs.langmuir.6b01766">Langmuir 2016, 32 (43), 11328–11334.</a>.</h5>
+
+<h3 id="toc_40"><strong><span style="color:#2da266">2015</span></strong></h3>
+
+<h5 id="toc_41">12. Guo, Z.; <span style="color:#00bfff">Liu, Y.</span>; Lohse, D.; Zhang, X.; Zhang, X. Stability of Micro-Cassie States on Rough Substrates. <a href="https://doi.org/10.1063/1.4922905">J. Chem. Phys. 2015, 142 (24), 244704</a>.</h5>
+
+<h5 id="toc_42">11. van Meel, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Frenkel, D. Mechanism of Two-Step Vapour–Crystal Nucleation in a Pore. <a href="https://doi.org/10.1080/00268976.2015.1031844">Mol. Phys. 2015, 113 (17–18), 2742–2754</a>.</h5>
+
+<h5 id="toc_43">10. Guo, Z.; <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Constrained Lattice Density Functional Theory and Its Applications on Vapor–Liquid Nucleations. <a href="https://doi.org/10.1007/s11434-014-0702-y">Sci. Bull. 2015, 60 (3), 320–327</a>.</h5>
+
+<h3 id="toc_44"><strong><span style="color:#2da266">2014</span></strong></h3>
+
+<h5 id="toc_45">9. <span style="color:#00bfff">Liu, Y.</span>; Wang, J.; Zhang, X.; Wang, W. Contact Line Pinning and the Relationship between Nanobubbles and Substrates. <a href="https://doi.org/10.1063/1.4863448">J. Chem. Phys. 2014, 140 (5), 054705</a>.</h5>
+
+<h5 id="toc_46">8. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. A Unified Mechanism for the Stability of Surface Nanobubbles: Contact Line Pinning and Supersaturation. <a href="https://doi.org/10.1063/1.4896937">J. Chem. Phys. 2014, 141 (13), 134702</a>.</h5>
+
+<h5 id="toc_47">7. Guo, Q.; <span style="color:#00bfff">Liu, Y.</span>; Jiang, G.; Zhang, X. Condensation of Droplets on Nanopillared Hydrophobic Substrates. <a href="https://doi.org/10.1039/c3sm52260a">Soft Matter 2014, 10 (8), 1182</a>.</h5>
+
+<h3 id="toc_48"><strong><span style="color:#2da266">2013</span></strong></h3>
+
+<h5 id="toc_49">6. Guo, Q.; <span style="color:#00bfff">Liu, Y.</span>; Jiang, G.; Zhang, X. Cooperative Effect in Nucleation: Nanosized Seed Particles Jointly Nucleate Vapor-Liquid Transitions. <a href="https://doi.org/10.1063/1.4807726">J. Chem. Phys. 2013, 138 (21), 214701</a>.</h5>
+
+<h5 id="toc_50">5. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Evaporation Dynamics of Nanodroplets and Their Anomalous Stability on Rough Substrates. Phys. Rev. E - Stat. Nonlinear, <a href="https://doi.org/10.1103/PhysRevE.88.012404">Soft Matter Phys. 2013, 88 (1), 012404</a>.</h5>
+
+<h5 id="toc_51">4. <span style="color:#00bfff">Liu, Y.</span>; Wang, J.; Zhang, X. Accurate Determination of the Vapor-Liquid-Solid Contact Line Tension and the Viability of Young Equation. <a href="https://doi.org/10.1038/srep02008">Sci. Rep. 2013, 3, 2008</a>.</h5>
+
+<h5 id="toc_52">3. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Nanobubble Stability Induced by Contact Line Pinning. <a href="https://doi.org/10.1063/1.4773249">J. Chem. Phys. 2013, 138 (1), 014706</a></h5>
+
+<h3 id="toc_53"><strong><span style="color:#2da266">2012-2011</span></strong></h3>
+
+<h5 id="toc_54">2. <span style="color:#00bfff">Liu, Y.</span>; Men, Y.; Zhang, X. Nucleation Mechanism for Vapor-to-Liquid Transition from Substrates with Nanoscale Pores Opened at One End. <a href="https://doi.org/10.1063/1.4749319">J. Chem. Phys. 2012, 137 (10), 104701</a>.</h5>
+
+<h5 id="toc_55">1. <span style="color:#00bfff">Liu, Y.</span>; Men, Y.; Zhang, X. How Nanoscale Seed Particles Affect Vapor-Liquid Nucleation. <a href="https://doi.org/10.1063/1.3658502">J. Chem. Phys. 2011, 135 (18), 184701</a>.</h5>
+
+<h2 id="toc_56"></h2>
+
+<h4 id="toc_57"><a href="./index.html">HOME</a></h4>
+
+
+
+
+</body>
+
+</html>
