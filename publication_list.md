@@ -21,7 +21,7 @@
 
 ### **<span style="color:#2da266">2021</span>**
 
-##### 35. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. [J. Chem. Phys. 2021, 154 (10), 104120](https://doi.org/10.1063/5.0041285).
+##### 35. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. [J. Chem. Phys. 2021, 154 (10), 104120](https://doi.org/10.1063/5.0041285). <span style="color:#d56500">(Editor's Pick)</span>
 
 ##### 34. Wood, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. Crystal Nucleation in Colloidal Rod Suspensions: The Effect of Depletant Size. [J. Chem. Phys. 2021, 154 (24), 244505](https://doi.org/10.1063/5.0052623).
 
