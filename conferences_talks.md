@@ -42,7 +42,7 @@
 
 ### **<span style="color:#2da266">2015</span>**
 
-##### 4. Stability of Surface Nanobubbles. <span style="color:#b80000">Invited Talk</span> – Prof. Detlef Lohse, University of Twente, Enschede, Netherlands, Jan. 26, 2015.
+##### 4. Stability of Surface Nanobubbles. <span style="color:#b80000">Invited Talk</span> – Prof. Detlef Lohse, University of Twente, <span style="color:#00bfff">Enschede, Netherlands</span>, Jan. 26, 2015.
 
 
 ### **<span style="color:#2da266">2013-2012</span>**
