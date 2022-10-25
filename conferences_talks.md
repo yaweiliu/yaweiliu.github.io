@@ -23,7 +23,7 @@
 
 ##### 11. Dynamic Simulations of Rod-Shaped Colloidal Particles: Phase behaviour, self-assembly, diffusion and electrophoresis. <span style="color:#b80000">Oral</span> – Statistical Mechanics of Soft Matter (SM2) 2019, <span style="color:#00bfff">Adelaide, Australia</span>, Dec. 16-17, 2019.
 
-##### 10. Modelling Electrophoresis of Rod-shaped Colloidal Particles. <span style="color:#b80000">Invited Talk</span> – Prof. P. Mulvaney’s group, University of Melbourne, <span style="color:#00bfff">Melbourne, Australia</span>, Oct. 7, 2019.
+##### 10. Modelling Electrophoresis of Rod-shaped Colloidal Particles. <span style="color:#b80000">Invited Talk</span> – Prof. Paul Mulvaney, University of Melbourne, <span style="color:#00bfff">Melbourne, Australia</span>, Oct. 7, 2019.
 
 ##### 9. Stability and formation of surface nanobubbles: a computer simulation study. <span style="color:#b80000">Poster</span> – 9th Australian Colloid and Interface Symposium, <span style="color:#00bfff">Hobart, Tasmania, Australia</span>, Feb. 3-7, 2019.
 
@@ -42,7 +42,7 @@
 
 ### **<span style="color:#2da266">2015</span>**
 
-##### 4. Stability of Surface Nanobubbles. <span style="color:#b80000">Invited Talk</span> – Prof. D. Lohse’s group, University of Twente, Enschede, Netherlands, Jan. 26, 2015.
+##### 4. Stability of Surface Nanobubbles. <span style="color:#b80000">Invited Talk</span> – Prof. Detlef Lohse, University of Twente, Enschede, Netherlands, Jan. 26, 2015.
 
 
 ### **<span style="color:#2da266">2013-2012</span>**
