@@ -3,6 +3,8 @@
 
 ### **<span style="color:#2da266">2022</span>**
 
+##### 45. <span style="color:#00bfff">Liu, Y.</span>\*; Wood, J. A.; Giacometti, A.; Widmer-Cooper, A.\* The Thermodynamic Origins of Chiral Twist in Monolayer Assemblies of Rod-like Colloids. [Nanoscale 2022](https://doi.org/10.1039/D2NR05230J).
+
 ##### 44. Shi, B.; Pang, X.; Li, S.; Wu, H.; Shen, J.; Wang, X.; Fan, C.; Cao, L.; Zhu, T.; Qiu, M.; Yin, Z.; Kong, Y.; Liu, Y.; Zhang, M.; <span style="color:#00bfff">Liu, Y.</span>; Pan, F.; Jiang, Z. Short Hydrogen-Bond Network Confined on COF Surfaces Enables Ultrahigh Proton Conductivity. [Nat. Commun. 2022, 13 (1), 6666](https://doi.org/10.1038/s41467-022-33868-8).
 
 ##### 43. You, X.#; Cao, L.#; <span style="color:#00bfff">Liu, Y.</span>#; Wu, H.; Li, R.; Xiao, Q.; Yuan, J.; Zhang, R.; Fan, C.; Wang, X.; Yang, P.; Yang, X.; Ma, Y.; Jiang, Z. Charged Nanochannels in Covalent Organic Framework Membranes Enabling Efficient Ion Exclusion. [ACS Nano 2022, 16 (8), 11781–11791](https://doi.org/10.1021/acsnano.2c04767).
