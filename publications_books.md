@@ -3,7 +3,7 @@
 
 ### **<span style="color:#2da266">2022</span>**
 
-##### 45. <span style="color:#00bfff">Liu, Y.</span>\*; Wood, J. A.; Giacometti, A.; Widmer-Cooper, A.\* The Thermodynamic Origins of Chiral Twist in Monolayer Assemblies of Rod-like Colloids. [Nanoscale 2022](https://doi.org/10.1039/D2NR05230J).
+##### 45. <span style="color:#00bfff">Liu, Y.</span>\*; Wood, J. A.; Giacometti, A.; Widmer-Cooper, A.\* The Thermodynamic Origins of Chiral Twist in Monolayer Assemblies of Rod-like Colloids. [Nanoscale 2022](https://doi.org/10.1039/D2NR05230J). [<span style="color:#d56500">[Nanoscale 2023 Emerging Investigators]</span>](https://pubs.rsc.org/en/journals/articlecollectionlanding?sercode=nr&themeid=589c4c49-0d90-4579-a206-fa4a268bbe6a)
 
 ##### 44. Shi, B.; Pang, X.; Li, S.; Wu, H.; Shen, J.; Wang, X.; Fan, C.; Cao, L.; Zhu, T.; Qiu, M.; Yin, Z.; Kong, Y.; Liu, Y.; Zhang, M.; <span style="color:#00bfff">Liu, Y.</span>; Pan, F.; Jiang, Z. Short Hydrogen-Bond Network Confined on COF Surfaces Enables Ultrahigh Proton Conductivity. [Nat. Commun. 2022, 13 (1), 6666](https://doi.org/10.1038/s41467-022-33868-8).
 
@@ -25,7 +25,7 @@
 
 ### **<span style="color:#2da266">2021</span>**
 
-##### 35. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. [J. Chem. Phys. 2021, 154 (10), 104120](https://doi.org/10.1063/5.0041285). <span style="color:#d56500">(Editor's Pick)</span>
+##### 35. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. [J. Chem. Phys. 2021, 154 (10), 104120](https://doi.org/10.1063/5.0041285). <span style="color:#d56500">[Editor's Pick]</span>
 
 ##### 34. Wood, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. Crystal Nucleation in Colloidal Rod Suspensions: The Effect of Depletant Size. [J. Chem. Phys. 2021, 154 (24), 244505](https://doi.org/10.1063/5.0052623).
 
