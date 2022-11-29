@@ -3,6 +3,8 @@
 
 ### **<span style="color:#2da266">2022</span>**
 
+##### 47. Yang, C.; Long, M.; Ding, C.; Zhang, R.; Zhang, S.; Yuan, J.; Zhi, K.; Yin, Z.; Zheng, Y.; <span style="color:#00bfff">Liu, Y.</span>\*; Wu, H.\*; Jiang, Z.\* Antifouling Graphene Oxide Membranes for Oil-Water Separation via Hydrophobic Chain Engineering. [Nat. Commun. 2022, 13 (1), 7334](https://doi.org/10.1038/s41467-022-35105-8).
+
 ##### 46. Wang, H.; Zhai, Y.; Li, Y.; Cao, Y.; Shi, B.; Li, R.; Zhu, Z.; Jiang, H.; Guo, Z.; Wang, M.; Chen, L.; <span style="color:#00bfff">Liu, Y.</span>; Zhou, K.-G.; Pan, F.; Jiang, Z. Covalent Organic Framework Membranes for Efficient Separation of Monovalent Cations. [Nat. Commun. 2022, 13 (1), 7123](https://doi.org/10.1038/s41467-022-34849-7).
 
 ##### 45. <span style="color:#00bfff">Liu, Y.</span>\*; Wood, J. A.; Giacometti, A.; Widmer-Cooper, A.\* The Thermodynamic Origins of Chiral Twist in Monolayer Assemblies of Rod-like Colloids. [Nanoscale 2022, 14, 16837–16844](https://doi.org/10.1039/D2NR05230J). [<span style="color:#d56500">[Nanoscale 2023 Emerging Investigators]</span>](https://pubs.rsc.org/en/journals/articlecollectionlanding?sercode=nr&themeid=589c4c49-0d90-4579-a206-fa4a268bbe6a)
