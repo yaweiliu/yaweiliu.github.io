@@ -1,6 +1,10 @@
 #### [HOME](./index.html)
 # Publications and Books
 
+### **<span style="color:#2da266">2023</span>**
+
+##### 48. Guo, S.; <span style="color:#00bfff">Liu, Y.</span>; Wang, Y.; Dong, K.; Zhang, X.; Zhang, S. Interfacial Role of Ionic Liquids in CO2 Electrocatalytic Reduction: A Mechanistic Investigation. [Chem. Eng. J. 2023, 457](https://doi.org/10.1016/j.cej.2022.141076).
+
 ### **<span style="color:#2da266">2022</span>**
 
 ##### 47. Yang, C.; Long, M.; Ding, C.; Zhang, R.; Zhang, S.; Yuan, J.; Zhi, K.; Yin, Z.; Zheng, Y.; <span style="color:#00bfff">Liu, Y.</span>\*; Wu, H.\*; Jiang, Z.\* Antifouling Graphene Oxide Membranes for Oil-Water Separation via Hydrophobic Chain Engineering. [Nat. Commun. 2022, 13 (1), 7334](https://doi.org/10.1038/s41467-022-35105-8).
@@ -105,7 +109,7 @@
 
 ##### 6. Guo, Q.; <span style="color:#00bfff">Liu, Y.</span>; Jiang, G.; Zhang, X. Cooperative Effect in Nucleation: Nanosized Seed Particles Jointly Nucleate Vapor-Liquid Transitions. [J. Chem. Phys. 2013, 138 (21), 214701](https://doi.org/10.1063/1.4807726).
 
-##### 5. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Evaporation Dynamics of Nanodroplets and Their Anomalous Stability on Rough Substrates. Phys. Rev. E - Stat. Nonlinear, [Soft Matter Phys. 2013, 88 (1), 012404](https://doi.org/10.1103/PhysRevE.88.012404).
+##### 5. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Evaporation Dynamics of Nanodroplets and Their Anomalous Stability on Rough Substrates. [Phys. Rev. E 2013, 88 (1), 012404](https://doi.org/10.1103/PhysRevE.88.012404).
 
 ##### 4. <span style="color:#00bfff">Liu, Y.</span>; Wang, J.; Zhang, X. Accurate Determination of the Vapor-Liquid-Solid Contact Line Tension and the Viability of Young Equation. [Sci. Rep. 2013, 3, 2008](https://doi.org/10.1038/srep02008).
 
