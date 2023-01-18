@@ -3,7 +3,7 @@
 
 ### **<span style="color:#2da266">2023</span>**
 
-##### 48. Guo, S.; <span style="color:#00bfff">Liu, Y.</span>; Wang, Y.; Dong, K.; Zhang, X.; Zhang, S. Interfacial Role of Ionic Liquids in CO2 Electrocatalytic Reduction: A Mechanistic Investigation. [Chem. Eng. J. 2023, 457](https://doi.org/10.1016/j.cej.2022.141076).
+##### 48. Guo, S.; <span style="color:#00bfff">Liu, Y.</span>; Wang, Y.; Dong, K.; Zhang, X.; Zhang, S. Interfacial Role of Ionic Liquids in CO2 Electrocatalytic Reduction: A Mechanistic Investigation. [Chem. Eng. J. 2023, 457, 141076](https://doi.org/10.1016/j.cej.2022.141076).
 
 ### **<span style="color:#2da266">2022</span>**
 
