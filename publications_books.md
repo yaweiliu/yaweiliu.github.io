@@ -3,6 +3,14 @@
 
 ### **<span style="color:#2da266">2023</span>**
 
+##### 52. Xu, S.; <span style="color:#00bfff">Liu, Y.</span>; Li, X.; Yue, B.; Huo, F.; He, H.; Zhang, S. Quantitative Relation between Ionic Diffusivity and Ionic Association in Ionic Liquid–Water Mixtures. [J. Phys. Chem. Lett. 2023, 14, 2708–2714](https://doi.org/10.1021/acs.jpclett.2c03610).
+
+##### 51. Shi, B.; Pang, X.; Lyu, B.; Wu, H.; Shen, J.; Guan, J.; Wang, X.; Fan, C.; Cao, L.; Zhu, T.; Kong, Y.; <span style="color:#00bfff">Liu, Y.</span>; Jiang, Z. Spacer‐Engineered Ionic Channels in Covalent Organic Framework Membranes toward Ultrafast Proton Transport. [Adv. Mater. 2023, 2211004, 2211004](https://doi.org/10.1002/adma.202211004).
+
+##### 50. Wang, Z.; Bai, L.; Dong, H.; <span style="color:#00bfff">Liu, Y.</span>; Jiang, H.; Bai, Y.; Zhang, X. Modulation of Nanobubble Behaviors through Ionic Liquids during CO 2 Electroreduction. ACS Sustain. [Chem. Eng. 2023, 11 (5), 1909–1916](https://doi.org/10.1021/acssuschemeng.2c06643).
+
+##### 49. Xu, P.; Zhang, X.; Zhao, L.; Wang, Z.; <span style="color:#00bfff">Liu, Y.</span>; Bai, L.; Liu, Z. Prominently Improved CO2/N2 Separation Efficiency by Ultrathin-Ionic-Liquid-Covered MXene Membrane. [Sep. Purif. Technol. 2023, 311, 123296](https://doi.org/10.1016/j.seppur.2023.123296).
+
 ##### 48. Guo, S.; <span style="color:#00bfff">Liu, Y.</span>; Wang, Y.; Dong, K.; Zhang, X.; Zhang, S. Interfacial Role of Ionic Liquids in CO2 Electrocatalytic Reduction: A Mechanistic Investigation. [Chem. Eng. J. 2023, 457, 141076](https://doi.org/10.1016/j.cej.2022.141076).
 
 ### **<span style="color:#2da266">2022</span>**
