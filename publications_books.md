@@ -7,19 +7,20 @@
 
 ##### 14. <span style="color:#00bfff">Liu, Y.</span>\*; Wood, J. A.; Giacometti, A.; Widmer-Cooper, A.\* The Thermodynamic Origins of Chiral Twist in Monolayer Assemblies of Rod-like Colloids. [Nanoscale 2022, 14, 16837–16844](https://doi.org/10.1039/D2NR05230J). [<span style="color:#d56500">[Nanoscale 2023 Emerging Investigators]</span>](https://pubs.rsc.org/en/journals/articlecollectionlanding?sercode=nr&themeid=589c4c49-0d90-4579-a206-fa4a268bbe6a)
 
-##### 13. You, X.#; Cao, L.#; <span style="color:#00bfff">Liu, Y.</span>#; Wu, H.; Li, R.; Xiao, Q.; Yuan, J.; Zhang, R.; Fan, C.; Wang, X.; Yang, P.; Yang, X.; Ma, Y.; Jiang, Z. Charged Nanochannels in Covalent Organic Framework Membranes Enabling Efficient Ion Exclusion. [ACS Nano 2022, 16 (8), 11781–11791](https://doi.org/10.1021/acsnano.2c04767).
+##### 13. Wang, M.; Zhang, P.; Liang, X.; Zhao, J.; <span style="color:#00bfff">Liu, Y.</span>; Cao, Y.; Wang, H.; Chen, Y.; Zhang, Z.; Pan, F.; Zhang, Z.; Jiang, Z. Ultrafast Seawater Desalination with Covalent Organic Framework Membranes. [Nat. Sustain. 2022, 5 (6), 518–526](https://doi.org/10.1038/s41893-022-00870-3).
 
-##### 12. Bo, A.; <span style="color:#00bfff">Liu, Y.</span>; Kuttich, B.; Kraus, T.; Widmer‐Cooper, A.; de Jonge, N. Nanoscale Faceting and Ligand Shell Structure Dominate the Self‐Assembly of Nonpolar Nanoparticles into Superlattices. [Adv. Mater. 2022, 34 (20), 2109093](https://doi.org/10.1002/adma.202109093).
+##### 12. You, X.#; Cao, L.#; <span style="color:#00bfff">Liu, Y.</span>#; Wu, H.; Li, R.; Xiao, Q.; Yuan, J.; Zhang, R.; Fan, C.; Wang, X.; Yang, P.; Yang, X.; Ma, Y.; Jiang, Z. Charged Nanochannels in Covalent Organic Framework Membranes Enabling Efficient Ion Exclusion. [ACS Nano 2022, 16 (8), 11781–11791](https://doi.org/10.1021/acsnano.2c04767).
 
-##### 11. Fan, C.; Cao, L.; Yang, C.; Xiao, Q.; You, X.; Wang, X.; Kong, Y.; Wu, H.\*; <span style="color:#00bfff">Liu, Y.</span>\*; Jiang, Z.\* Charged Nanochannels Endow COF Membrane with Weakly Concentration-Dependent Methanol Permeability. [J. Memb. Sci. 2022, 645, 120186](https://doi.org/10.1016/j.memsci.2021.120186).
+##### 11. Bo, A.; <span style="color:#00bfff">Liu, Y.</span>; Kuttich, B.; Kraus, T.; Widmer‐Cooper, A.; de Jonge, N. Nanoscale Faceting and Ligand Shell Structure Dominate the Self‐Assembly of Nonpolar Nanoparticles into Superlattices. [Adv. Mater. 2022, 34 (20), 2109093](https://doi.org/10.1002/adma.202109093).
 
-##### 10. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. [J. Chem. Phys. 2021, 154 (10), 104120](https://doi.org/10.1063/5.0041285). <span style="color:#d56500">[Editor's Pick]</span>
+##### 10. Fan, C.; Cao, L.; Yang, C.; Xiao, Q.; You, X.; Wang, X.; Kong, Y.; Wu, H.\*; <span style="color:#00bfff">Liu, Y.</span>\*; Jiang, Z.\* Charged Nanochannels Endow COF Membrane with Weakly Concentration-Dependent Methanol Permeability. [J. Memb. Sci. 2022, 645, 120186](https://doi.org/10.1016/j.memsci.2021.120186).
 
-##### 9. Zhang, H.; <span style="color:#00bfff">Liu, Y.</span>; Shahidan, M. F. S.; Kinnear, C.; Maasoumi, F.; Cadusch, J.; Akinoglu, E. M.; James, T. D.; Widmer‐Cooper, A.; Roberts, A.; Mulvaney, P. Direct Assembly of Vertically Oriented, Gold Nanorod Arrays. [Adv. Funct. Mater. 2021, 31 (6), 2006753](https://doi.org/10.1002/adfm.202006753).
+##### 9. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Dissipative Particle Dynamics Model for Studying Dynamic Phenomena in Colloidal Rod Suspensions. [J. Chem. Phys. 2021, 154 (10), 104120](https://doi.org/10.1063/5.0041285). <span style="color:#d56500">[Editor's Pick]</span>
 
-##### 8. <span style="color:#00bfff">Liu, Y.</span>; Ganti, R.; Frenkel, D. Pressure Gradients Fail to Predict Diffusio-Osmosis. [J. Phys. Condens. Matter 2018, 30 (20), 205002](https://doi.org/10.1088/1361-648X/aabd58).
+##### 8. Zhang, H.; <span style="color:#00bfff">Liu, Y.</span>; Shahidan, M. F. S.; Kinnear, C.; Maasoumi, F.; Cadusch, J.; Akinoglu, E. M.; James, T. D.; Widmer‐Cooper, A.; Roberts, A.; Mulvaney, P. Direct Assembly of Vertically Oriented, Gold Nanorod Arrays. [Adv. Funct. Mater. 2021, 31 (6), 2006753](https://doi.org/10.1002/adfm.202006753).
 
-##### 7. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Versatile Simulation Method for Studying Phase Behavior and Dynamics in Colloidal Rod and Rod-Polymer Suspensions. [J. Chem. Phys. 2019, 150 (24), 244508](https://doi.org/10.1063/1.5096193).
+##### 7. <span style="color:#00bfff">Liu, Y.</span>; Ganti, R.; Frenkel, D. Pressure Gradients Fail to Predict Diffusio-Osmosis. [J. Phys. Condens. Matter 2018, 30 (20), 205002](https://doi.org/10.1088/1361-648X/aabd58).
+
 
 ##### 6. Ganti, R.; <span style="color:#00bfff">Liu, Y.</span>; Frenkel, D. Hamiltonian Transformation to Compute Thermo-Osmotic Forces. [Phys. Rev. Lett. 2018, 121 (6), 068002](https://doi.org/10.1103/PhysRevLett.121.068002).
 
@@ -64,25 +65,25 @@
 
 ##### 29. Zhang, J.; Li, X.; <span style="color:#00bfff">Liu, Y.</span>; Feng, J.; Zhao, J.; Geng, Y.; Gao, H.; Wang, T.; Yang, W.; Jiang, L.; Wu, Y. Confined Assembly of Colloidal Nanorod Superstructures by Locally Controlling Free‐Volume Entropy in Nonequilibrium Fluids. [Adv. Mater. 2022, 34 (28), 2202119](https://doi.org/10.1002/adma.202202119).
 
-##### 28. Wang, M.; Zhang, P.; Liang, X.; Zhao, J.; <span style="color:#00bfff">Liu, Y.</span>; Cao, Y.; Wang, H.; Chen, Y.; Zhang, Z.; Pan, F.; Zhang, Z.; Jiang, Z. Ultrafast Seawater Desalination with Covalent Organic Framework Membranes. [Nat. Sustain. 2022, 5 (6), 518–526](https://doi.org/10.1038/s41893-022-00870-3).
-
-##### 27. <span style="color:#00bfff">Liu, Y.</span>; Wei, J.; Frenkel, D.; Widmer-Cooper, A. Modelling Aggregates of Cetyltrimethylammonium Bromide on Gold Surfaces Using Dissipative Particle Dynamics Simulations. [Mol. Simul. 2022, 48 (10), 872–881](https://doi.org/10.1080/08927022.2021.1948546).
+##### 28. <span style="color:#00bfff">Liu, Y.</span>; Wei, J.; Frenkel, D.; Widmer-Cooper, A. Modelling Aggregates of Cetyltrimethylammonium Bromide on Gold Surfaces Using Dissipative Particle Dynamics Simulations. [Mol. Simul. 2022, 48 (10), 872–881](https://doi.org/10.1080/08927022.2021.1948546).
 
 ### **<span style="color:#2da266">2021</span>**
 
-##### 26. Wood, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. Crystal Nucleation in Colloidal Rod Suspensions: The Effect of Depletant Size. [J. Chem. Phys. 2021, 154 (24), 244505](https://doi.org/10.1063/5.0052623).
+##### 27. Wood, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. Crystal Nucleation in Colloidal Rod Suspensions: The Effect of Depletant Size. [J. Chem. Phys. 2021, 154 (24), 244505](https://doi.org/10.1063/5.0052623).
 
 ### **<span style="color:#2da266">2020</span>**
 
-##### 25. Wei, J.\*; <span style="color:#00bfff">Liu, Y.</span>\*; Song, F. Coarse-Grained Simulation of the Translational and Rotational Diffusion of Globular Proteins by Dissipative Particle Dynamics. [J. Chem. Phys. 2020, 153 (23), 234902](https://doi.org/10.1063/5.0025620).
+##### 26. Wei, J.\*; <span style="color:#00bfff">Liu, Y.</span>\*; Song, F. Coarse-Grained Simulation of the Translational and Rotational Diffusion of Globular Proteins by Dissipative Particle Dynamics. [J. Chem. Phys. 2020, 153 (23), 234902](https://doi.org/10.1063/5.0025620).
 
-##### 24. Sharma, A.; Wojciechowski, J. P.; <span style="color:#00bfff">Liu, Y.</span>; Pelras, T.; Wallace, C. M.; Müllner, M.; Widmer-Cooper, A.; Thordarson, P.; Lakhwani, G. The Role of Fiber Agglomeration in Formation of Perylene-Based Fiber Networks. [Cell Reports Phys. Sci. 2020, 1 (8), 100148](https://doi.org/10.1016/j.xcrp.2020.100148).
+##### 25. Sharma, A.; Wojciechowski, J. P.; <span style="color:#00bfff">Liu, Y.</span>; Pelras, T.; Wallace, C. M.; Müllner, M.; Widmer-Cooper, A.; Thordarson, P.; Lakhwani, G. The Role of Fiber Agglomeration in Formation of Perylene-Based Fiber Networks. [Cell Reports Phys. Sci. 2020, 1 (8), 100148](https://doi.org/10.1016/j.xcrp.2020.100148).
 
-##### 23. <span style="color:#00bfff">Liu, Y.</span>; Bernardi, S.; Widmer-Cooper, A. Stability of Pinned Surface Nanobubbles against Expansion: Insights from Theory and Simulation. [J. Chem. Phys. 2020, 153 (2), 024704](https://doi.org/10.1063/5.0013223).
+##### 24. <span style="color:#00bfff">Liu, Y.</span>; Bernardi, S.; Widmer-Cooper, A. Stability of Pinned Surface Nanobubbles against Expansion: Insights from Theory and Simulation. [J. Chem. Phys. 2020, 153 (2), 024704](https://doi.org/10.1063/5.0013223).
 
 ### **<span style="color:#2da266">2019</span>**
 
-##### 22. Lloyd, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Ng, S. H.; Thai, T.; Gómez, D. E.; Widmer-Cooper, A.; Bach, U. Self-Assembly of Spherical and Rod-Shaped Nanoparticles with Full Positional Control. [Nanoscale 2019, 11 (47), 22841–22848](https://doi.org/10.1039/C9NR06679A).
+##### 23. Lloyd, J. A.; <span style="color:#00bfff">Liu, Y.</span>; Ng, S. H.; Thai, T.; Gómez, D. E.; Widmer-Cooper, A.; Bach, U. Self-Assembly of Spherical and Rod-Shaped Nanoparticles with Full Positional Control. [Nanoscale 2019, 11 (47), 22841–22848](https://doi.org/10.1039/C9NR06679A).
+
+##### 22. <span style="color:#00bfff">Liu, Y.</span>; Widmer-Cooper, A. A Versatile Simulation Method for Studying Phase Behavior and Dynamics in Colloidal Rod and Rod-Polymer Suspensions. [J. Chem. Phys. 2019, 150 (24), 244508](https://doi.org/10.1063/1.5096193).
 
 ### **<span style="color:#2da266">2018</span>**
 
