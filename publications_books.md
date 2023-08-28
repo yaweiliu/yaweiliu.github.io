@@ -29,10 +29,9 @@
 
 ##### 3. <span style="color:#00bfff">Liu, Y.</span>; Wang, J.; Zhang, X.; Wang, W. Contact Line Pinning and the Relationship between Nanobubbles and Substrates. [J. Chem. Phys. 2014, 140 (5), 054705](https://doi.org/10.1063/1.4863448).
 
-##### 2. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. A Unified Mechanism for the Stability of Surface Nanobubbles: Contact Line Pinning and Supersaturation. [J. Chem. Phys. 2014, 141 (13), 134702](https://doi.org/10.1063/1.4896937).
+##### 2. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. A Unified Mechanism for the Stability of Surface Nanobubbles: Contact Line Pinning and Supersaturation. [J. Chem. Phys. 2014, 141 (13), 134702](https://doi.org/10.1063/1.4896937). <span style="color:#d56500">[Cited by 107 times]</span>
 
-##### 1. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Nanobubble Stability Induced by Contact Line Pinning. [J. Chem. Phys. 2013, 138 (1), 014706](https://doi.org/10.1063/1.4773249)
-
+##### 1. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Nanobubble Stability Induced by Contact Line Pinning. [J. Chem. Phys. 2013, 138 (1), 014706](https://doi.org/10.1063/1.4773249). <span style="color:#d56500">[Cited by 172 times]</span>
 
 ## Others 
 
