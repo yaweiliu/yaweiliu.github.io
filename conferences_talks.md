@@ -1,10 +1,15 @@
 #### [HOME](./index.html)
 # Conferences and Talks
 
+### **<span style="color:#2da266">2023</span>**
+
+##### 18. Understanding Assembly of Nanoparticles from Computation. <span style="color:#b80000">Invited Oral</span> – The 9th International Conference on Nanoscience and Technology, China (ChinaNANO 2023), <span style="color:#00bfff">Beijing, China</span>, Aug. 27, 2023. [中文]
+
+##### 17. Interfacial structure-controlled nanomaterial assembly. <span style="color:#b80000">Invited Oral</span> – The 6th National Conference on Ionic Liquids and Green Processes, <span style="color:#00bfff">Deqing, China</span>, May 12, 2023. [中文]
+
 ### **<span style="color:#2da266">2022</span>**
 
 ##### 16. Understanding Soft Matter from Computations. <span style="color:#b80000">Invited Talk</span> – Prof. Xianren Zhang, Beijing University of Chemical Technology, <span style="color:#00bfff">Beijing, China</span>, Jan. 11, 2022. [中文]
-
 
 ### **<span style="color:#2da266">2021</span>**
 
