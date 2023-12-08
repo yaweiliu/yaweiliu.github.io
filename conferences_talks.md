@@ -3,9 +3,11 @@
 
 ### **<span style="color:#2da266">2023</span>**
 
-##### 18. Understanding Assembly of Nanoparticles from Computation. <span style="color:#b80000">Invited Oral</span> – The 9th International Conference on Nanoscience and Technology, China (ChinaNANO 2023), <span style="color:#00bfff">Beijing, China</span>, Aug. 27, 2023.
+##### 19. Evolution and regulation of nanobubbles in electrochemical systems. <span style="color:#b80000">Invited Oral</span> – 2023 Annual Meeting of Chemical Industry and Engineering Society of China, <span style="color:#00bfff">Guangzhou, China</span>, Nov. 27-29, 2023. [中文]
 
-##### 17. Interfacial structure-controlled nanomaterial assembly. <span style="color:#b80000">Invited Oral</span> – The 6th National Conference on Ionic Liquids and Green Processes, <span style="color:#00bfff">Deqing, China</span>, May 12, 2023. [中文]
+##### 18. Understanding Assembly of Nanoparticles from Computation. <span style="color:#b80000">Invited Oral</span> – The 9th International Conference on Nanoscience and Technology, China (ChinaNANO 2023), <span style="color:#00bfff">Beijing, China</span>, Aug. 26-28, 2023.
+
+##### 17. Interfacial structure-controlled nanomaterial assembly. <span style="color:#b80000">Invited Oral</span> – The 6th National Conference on Ionic Liquids and Green Processes, <span style="color:#00bfff">Deqing, China</span>, May 11-13, 2023. [中文]
 
 ### **<span style="color:#2da266">2022</span>**
 
