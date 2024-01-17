@@ -41,6 +41,12 @@
 
 ## Others 
 
+### **<span style="color:#2da266">2024</span>**
+
+##### 39. Liu, Z.; Pang, X.; Shi, B.; Xing, N.; <span style="color:#00bfff">Liu, Y.</span>; Lyu, B.; Zhang, L.; Kong, Y.; Wang, S.; Gao, Z.; Xue, R.; Jing, T.; Liu, C.; Bai, Q.; Wu, H.; Jiang, Z. Covalent Organic Frameworks with Flexible Side Chains in Hybrid PEMs Enable Highly Efficient Proton Conductivity. [Mater. Horizons 2024, 11 (1), 141–150](https://doi.org/10.1039/D3MH01604H).
+
+##### 38. Wang, Y.; Liu, Y.; Dong, K.; He, H.; Li, Y.; Zhang, S. 纳微尺度热力学与前沿应用. [中国科学：化学 2024, 54 (1), 112–120](https://doi.org/10.1360/SSC-2023-0219).
+
 ### **<span style="color:#2da266">2023</span>**
 
 ##### 37. Liu, P.; Li, Y.; <span style="color:#00bfff">Liu, Y.</span>; Liu, J.; Dong, K.; Jia, Q. Molecular Insights into the Binding Behavior of Imidazolium Ionic Liquids to the Receptor Binding Domain of the SARS-CoV-2 Spike Protein. [J. Phys. Chem. B 2023, 127, 4396–4405](https://doi.org/10.1021/acs.jpcb.3c00593).
