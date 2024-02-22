@@ -35,13 +35,19 @@
 
 ##### 3. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Evaporation Dynamics of Nanodroplets and Their Anomalous Stability on Rough Substrates. [Phys. Rev. E 2013, 88 (1), 012404](https://doi.org/10.1103/PhysRevE.88.012404).
 
-##### 2. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. A Unified Mechanism for the Stability of Surface Nanobubbles: Contact Line Pinning and Supersaturation. [J. Chem. Phys. 2014, 141 (13), 134702](https://doi.org/10.1063/1.4896937). <span style="color:#d56500">[Cited by 107 times]</span>
+##### 2. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. A Unified Mechanism for the Stability of Surface Nanobubbles: Contact Line Pinning and Supersaturation. [J. Chem. Phys. 2014, 141 (13), 134702](https://doi.org/10.1063/1.4896937). <span style="color:#d56500">[Cited by 115 times]</span>
 
-##### 1. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Nanobubble Stability Induced by Contact Line Pinning. [J. Chem. Phys. 2013, 138 (1), 014706](https://doi.org/10.1063/1.4773249). <span style="color:#d56500">[Cited by 172 times]</span>
+##### 1. <span style="color:#00bfff">Liu, Y.</span>; Zhang, X. Nanobubble Stability Induced by Contact Line Pinning. [J. Chem. Phys. 2013, 138 (1), 014706](https://doi.org/10.1063/1.4773249). <span style="color:#d56500">[Cited by 180 times]</span>
 
 ## Others 
 
 ### **<span style="color:#2da266">2024</span>**
+
+##### 42. Zhang, H.; <span style="color:#00bfff">Liu, Y.</span>; Dong, Y.; Ashokan, A.; Widmer-Cooper, A.; Köhler, J.; Mulvaney, P. Electrophoretic Deposition of Single Nanoparticles. [Langmuir 2024, 40 (6), 2783–2791](https://doi.org/10.1021/acs.langmuir.3c02951).
+
+##### 41. Wei, J.; Xue, Y.; <span style="color:#00bfff">Liu, Y.</span>; Tian, H.; Shao, Y.; Gao, Y. Q. Steric Repulsion Introduced by Loop Constraints Modulates the Microphase Separation of Chromatins. [J. Chem. Phys. 2024, 160 (5)](https://doi.org/10.1063/5.0189692).
+
+##### 40. Sheng, X.; Li, X.; Jia, Y.; Chen, P.; <span style="color:#00bfff">Liu, Y.</span>; Ru, G.; Xu, M.; Liu, L.; Zhu, X.; Jin, X.; Liu, Y.; Zhao, H.; Li, H. Electrochemical Biosensor for Protein Concentration Monitoring Using Natural Wood Evaporation for Power Generation. [Anal. Chem. 2024, 96 (2), 917–925](https://doi.org/10.1021/acs.analchem.3c05041).
 
 ##### 39. Liu, Z.; Pang, X.; Shi, B.; Xing, N.; <span style="color:#00bfff">Liu, Y.</span>; Lyu, B.; Zhang, L.; Kong, Y.; Wang, S.; Gao, Z.; Xue, R.; Jing, T.; Liu, C.; Bai, Q.; Wu, H.; Jiang, Z. Covalent Organic Frameworks with Flexible Side Chains in Hybrid PEMs Enable Highly Efficient Proton Conductivity. [Mater. Horizons 2024, 11 (1), 141–150](https://doi.org/10.1039/D3MH01604H).
 
