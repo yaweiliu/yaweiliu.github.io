@@ -45,7 +45,7 @@
 
 ##### 42. Zhang, H.; <span style="color:#00bfff">Liu, Y.</span>; Dong, Y.; Ashokan, A.; Widmer-Cooper, A.; Köhler, J.; Mulvaney, P. Electrophoretic Deposition of Single Nanoparticles. [Langmuir 2024, 40 (6), 2783–2791](https://doi.org/10.1021/acs.langmuir.3c02951).
 
-##### 41. Wei, J.; Xue, Y.; <span style="color:#00bfff">Liu, Y.</span>; Tian, H.; Shao, Y.; Gao, Y. Q. Steric Repulsion Introduced by Loop Constraints Modulates the Microphase Separation of Chromatins. [J. Chem. Phys. 2024, 160 (5)](https://doi.org/10.1063/5.0189692).
+##### 41. Wei, J.; Xue, Y.; <span style="color:#00bfff">Liu, Y.</span>; Tian, H.; Shao, Y.; Gao, Y. Q. Steric Repulsion Introduced by Loop Constraints Modulates the Microphase Separation of Chromatins. [J. Chem. Phys. 2024, 160 (5), 054904](https://doi.org/10.1063/5.0189692).
 
 ##### 40. Sheng, X.; Li, X.; Jia, Y.; Chen, P.; <span style="color:#00bfff">Liu, Y.</span>; Ru, G.; Xu, M.; Liu, L.; Zhu, X.; Jin, X.; Liu, Y.; Zhao, H.; Li, H. Electrochemical Biosensor for Protein Concentration Monitoring Using Natural Wood Evaporation for Power Generation. [Anal. Chem. 2024, 96 (2), 917–925](https://doi.org/10.1021/acs.analchem.3c05041).
 
