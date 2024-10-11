@@ -1,6 +1,16 @@
 #### [HOME](./index.html)
 # Conferences and Talks
 
+### **<span style="color:#2da266">2024</span>**
+
+##### 23. Theoretical and computational study of surface nanobubbles. <span style="color:#b80000">Invited Talk</span> – Reading Club on Micro-/Nano-Bubbles, Chinese Society of Particuology, <span style="color:#00bfff">Online</span>, Sep. 13, 2024. [中文]
+
+##### 22. Thermodynamic theory and simulation for interfacial behaviour of nanofluids. <span style="color:#b80000">Plenary Talk</span> – Symposium on Thermal Analysis Techniques and Applications 2024, <span style="color:#00bfff">Chengdu, China</span>, Aug. 9-13, 2023. [中文]
+
+##### 21. Understanding membrane transport processes from computations. <span style="color:#b80000">Invited Oral</span> – International Congress on Separation and Purification Technology 2024 (ISPT2024), <span style="color:#00bfff">Zhenzhou, China</span>, July 7-11, 2024.
+
+##### 20. Micromechanism of diffusioosmotic flow and design of high-efficiency permeable membranes. <span style="color:#b80000">Invited Oral</span> – The 21st National Symposium on Chemical Thermodynamics and Thermal Analysis of the Chinese Chemical Society, <span style="color:#00bfff">Tianjin, China</span>, Apr. 19-21, 2024. [中文]
+
 ### **<span style="color:#2da266">2023</span>**
 
 ##### 19. Evolution and regulation of nanobubbles in electrochemical systems. <span style="color:#b80000">Invited Oral</span> – 2023 Annual Meeting of Chemical Industry and Engineering Society of China, <span style="color:#00bfff">Guangzhou, China</span>, Nov. 27-29, 2023. [中文]
