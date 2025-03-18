@@ -1,7 +1,11 @@
 #### [HOME](./index.html)
 # Publications and Books
 
-### **<span style="color:#2da266">2025</span>**
+## **<span style="color:#2da266">Books and Chapters</span>**
+
+##### 1. Zhang, S.; Dong, K.; <span style="color:#00bfff">Liu, Y.</span>; Li, Y.; Zhang, X.; Yao, X. Chapter 6 Condensed matter chemistry of ionic liquids and their chemical reactions. [Introduction to Condensed Matter Chemistry, Elsevier, 2024.](https://shop.elsevier.com/books/introduction-to-condensed-matter-chemistry/yu/978-0-443-16140-7)
+
+## **<span style="color:#2da266">Publications</span>**
 
 ##### 66. Xiao, Q.\*; Wei, Z.; Wang, X.-F.; He, F.; <span style="color:#00bfff">Liu, Y.</span>\*; Wang, H.\* Unravelling the Microscopic Interactions Underlying Uranyl Species Adsorption by Charged COFs: A Molecular Dynamics Simulation Study. [Surfaces and Interfaces 2025, 59, 105928.](https://doi.org/10.1016/j.surfin.2025.105928).
 
