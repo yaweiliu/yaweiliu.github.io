@@ -7,6 +7,8 @@
 
 ## **<span style="color:#2da266">Publications</span>**
 
+### **<span style="color:#2da266">2025</span>**
+
 ##### 66. Xiao, Q.\*; Wei, Z.; Wang, X.-F.; He, F.; <span style="color:#00bfff">Liu, Y.</span>\*; Wang, H.\* Unravelling the Microscopic Interactions Underlying Uranyl Species Adsorption by Charged COFs: A Molecular Dynamics Simulation Study. [Surfaces and Interfaces 2025, 59, 105928.](https://doi.org/10.1016/j.surfin.2025.105928).
 
 ##### 65. Pang, X.#; Shi, B.#; <span style="color:#00bfff">Liu, Y.</span>#; Wu, H.; Shen, J.; Guan, J.; Wang, X.; Fan, C.; Cao, L.; Zhu, T.; Kong, Y.; Jiang, Z. Confining Phosphoric Acid in Quaternized COF Channels for Ultra‐Stable and Fast Anhydrous Proton Transport. [Angew. Chemie Int. Ed. 2025, e202423458.](https://doi.org/10.1002/anie.202423458).
