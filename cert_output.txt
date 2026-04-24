@@ -1,0 +1,106 @@
+
+                            <section id="certifications" class="wrapper style2">
+                                <div class="inner">
+                                    <h2 class="major">Certifications</h2>
+                                    <section class="features">
+                                        <article>
+                                            <a href="certifications/202604新疆理化所.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202604新疆理化所.jpg" alt="202604新疆理化所" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202604化学会年会热力学.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202604化学会年会热力学.jpg" alt="202604化学会年会热力学" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202603纳米气泡分子模拟平台.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202603纳米气泡分子模拟平台.jpg" alt="202603纳米气泡分子模拟平台" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202510数据库软著.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202510数据库软著.jpg" alt="202510数据库软著" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202509Certificate_MOLLIQ_Editor_Editor.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202509Certificate_MOLLIQ_Editor_Editor.jpg" alt="202509Certificate_MOLLIQ_Editor_Editor" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202508烟台热力学邀请报告.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202508烟台热力学邀请报告.jpg" alt="202508烟台热力学邀请报告" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202504未来颗粒召集人-刘亚伟.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202504未来颗粒召集人-刘亚伟.jpg" alt="202504未来颗粒召集人-刘亚伟" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202504未来颗粒主题报告-刘亚伟.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202504未来颗粒主题报告-刘亚伟.jpg" alt="202504未来颗粒主题报告-刘亚伟" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202504CO2资源利用邀请报告.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202504CO2资源利用邀请报告.jpg" alt="202504CO2资源利用邀请报告" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202503mdtoolkit软著.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202503mdtoolkit软著.jpg" alt="202503mdtoolkit软著" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202410热分析青年委员聘书.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202410热分析青年委员聘书.jpg" alt="202410热分析青年委员聘书" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202409颗粒奖刘亚伟.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202409颗粒奖刘亚伟.jpg" alt="202409颗粒奖刘亚伟" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202409微纳气泡读书会.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202409微纳气泡读书会.jpg" alt="202409微纳气泡读书会" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202408热分析.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202408热分析.jpg" alt="202408热分析" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202407青年团队证书.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202407青年团队证书.jpg" alt="202407青年团队证书" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202404化学热力学分子模拟培训.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202404化学热力学分子模拟培训.jpg" alt="202404化学热力学分子模拟培训" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202404化学热力学.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202404化学热力学.jpg" alt="202404化学热力学" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202311化工年会.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202311化工年会.jpg" alt="202311化工年会" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/202305离子液体大会.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/202305离子液体大会.jpg" alt="202305离子液体大会" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/201706优秀毕业论文.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/201706优秀毕业论文.jpg" alt="201706优秀毕业论文" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/201410社会奖学金.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/201410社会奖学金.jpg" alt="201410社会奖学金" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/201312国家奖学金.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/201312国家奖学金.jpg" alt="201312国家奖学金" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/201211社会奖学金.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/201211社会奖学金.jpg" alt="201211社会奖学金" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>                                        <article>
+                                            <a href="certifications/201211国家奖学金.jpg" class="image" target="_blank" style="border: 0;">
+                                                <img src="certifications/201211国家奖学金.jpg" alt="201211国家奖学金" style="height: 400px; object-fit: contain; background: rgba(255,255,255,0.03); border-radius: 0px;" />
+                                            </a>
+                                        </article>
+                                    </section>
+                                </div>
+                            </section>
+    
